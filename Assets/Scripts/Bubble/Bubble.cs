@@ -8,7 +8,7 @@ public class Bubble : MonoBehaviour
     public TextMeshProUGUI bubbleText;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Soldier"))
         {
             SubtractBubble(1);
         }
