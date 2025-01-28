@@ -4,13 +4,13 @@ public class Camera : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * 0.2f;
+            transform.position += Vector3.right * 3.5f * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * 0.2f;
+            transform.position += Vector3.left * 3.5f * Time.deltaTime;
         }
     }
 }
