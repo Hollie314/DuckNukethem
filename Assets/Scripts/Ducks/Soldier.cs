@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Soldier : Duck
 {
-    Boolean StopMoving = false;
-    
+    bool StopMoving = false;
+    private int nbAtk = 1;
     void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Bubble"))
@@ -30,5 +30,10 @@ public class Soldier : Duck
     {
         yield return new WaitForSeconds(1f);
         Die();
+        Coin[] coins = GameObject.FindObjectsByType<Coin>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        for (int i = 0; i < coins.Length; i++)
+        {
+            
+        }
     }
 }

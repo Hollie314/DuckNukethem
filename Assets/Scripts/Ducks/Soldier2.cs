@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Soldier2 : Duck
 {
-    Boolean StopMoving = false;
-    
+    bool StopMoving = false;
+    private int nbAtk = 2;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bubble"))

@@ -1,26 +1,37 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
     private int totalBubble = 1000;
+    public TextMeshProUGUI bubbleText;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SubtractBubble();
+            SubtractBubble(1);
         }
     }
 
-    void AddBubble()
-        {
-            totalBubble += 10;
-            Debug.Log(totalBubble);
-        }
+    private void Start()
+    {
+        SetBubbleNumber(GetBubble());
+    }
 
-    void SubtractBubble()
+    public int GetBubble()
+    {
+        return totalBubble;
+    }
+
+    public void SetBubbleNumber(int amount)
+    {
+        this.totalBubble = amount;
+        bubbleText.text = amount.ToString();
+    }
+    void SubtractBubble(int amount)
         {
-            totalBubble -= 1;
-            Debug.Log(totalBubble);
+            this.totalBubble -= amount;
+            SetBubbleNumber(GetBubble());
         }
 }    
