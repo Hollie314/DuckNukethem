@@ -19,12 +19,11 @@ public class DuckSpawner : MonoBehaviour
         coin = GameObject.FindGameObjectWithTag("Coin").GetComponent<Coin>();
     }
 
-    public void SpawnDuck(GameObject prefab)
+    public void SpawnDuck(Soldier prefab)
     {
-        if (canSpawn == true && GetDuckNumber()<=4 && coin.CanISpawnDuck(1) == true)
+        if (canSpawn == true && GetDuckNumber()<=4 && coin.CanISpawnDuck(prefab.Cost) == true)
         {
-            GameObject duckGo = Instantiate(prefab);
-            Duck duck = duckGo.GetComponent<Duck>();
+            Duck duck = Instantiate(prefab);
             duck.spawner = this;
             ducks.Add(duck);
             canSpawn = false;

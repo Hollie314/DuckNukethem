@@ -6,8 +6,9 @@ using UnityEngine;
 public class Soldier : Duck
 {
     bool StopMoving = false;
-    int nbAtk = 1;
-    private int CoinAdd = 2;
+    public int nbAtk = 1;
+    public int Cost;
+    public int CoinGain;
     void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Bubble"))
@@ -30,6 +31,6 @@ public class Soldier : Duck
     IEnumerator DestroyDuck()
     {
         yield return new WaitForSeconds(1f);
-        Die(nbAtk, CoinAdd);
+        Die(nbAtk, CoinGain);
     }
 }

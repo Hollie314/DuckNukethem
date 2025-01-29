@@ -104,7 +104,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   player: {fileID: 0}
-  nbAtk: 1
+  bubble: {fileID: 0}
+  MoveSpeed: 3
+  Cost: 1
+  CoinGain: 2
 --- !u!70 &386281253841584280
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
