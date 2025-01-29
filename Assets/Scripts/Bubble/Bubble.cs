@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    private int totalBubble = 1000;
+    private int MaxBubble = 1;
+    private int totalBubble;
     public TextMeshProUGUI bubbleText;
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Soldier"))
-        {
-            SubtractBubble(1);
-        }
-    }
-
     private void Start()
     {
+        totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
     }
 
+    private void ResetBubbleNumber()
+    {
+        MaxBubble *= 10;
+        totalBubble = MaxBubble;
+        SetBubbleNumber(GetBubble());
+    }
     public int GetBubble()
     {
         return totalBubble;
@@ -29,9 +29,13 @@ public class Bubble : MonoBehaviour
         this.totalBubble = amount;
         bubbleText.text = amount.ToString();
     }
-    void SubtractBubble(int amount)
+    public void SubtractBubble(int amount)
         {
             this.totalBubble -= amount;
             SetBubbleNumber(GetBubble());
+            if (totalBubble <= 0)
+            {
+                ResetBubbleNumber();
+            }
         }
 }    

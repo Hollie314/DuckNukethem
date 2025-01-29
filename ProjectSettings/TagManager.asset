@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bubble
   - Soldier
+  - Coin
+  - Duck
   layers:
   - Default
   - TransparentFX
