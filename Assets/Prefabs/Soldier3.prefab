@@ -24,17 +24,25 @@ PrefabInstance:
       propertyPath: CoinGain
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1378524486717893066, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.13868357
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378524486717893066, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2389373406260762295, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Name
       value: Soldier3
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.z
