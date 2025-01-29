@@ -8,7 +8,6 @@ using UnityEngine.UI;
 using Object = System.Object;
 public class DuckSpawner : MonoBehaviour
 {
-    DuckInFile duckInFile;
     bool canSpawn = true;
     Coin coin;
     

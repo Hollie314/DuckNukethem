@@ -6,7 +6,7 @@ public class Duck : MonoBehaviour
     public DuckSpawner spawner;
     public Player player;
     public Bubble bubble;
-    public int MoveSpeed = 3;
+    public float MoveSpeed = 3;
 
     private void Start()
     {
