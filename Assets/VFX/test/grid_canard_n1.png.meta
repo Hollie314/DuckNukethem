@@ -1,70 +1,25 @@
 fileFormatVersion: 2
-guid: 753456c609ce9b8458a12151b2f958e3
+guid: c421b05d72458934ea5c04b75c73e54b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1255035461667777578
-    second: bubble_grid_0
+      213: 9219687324374518935
+    second: grid_canard_n1_0
   - first:
-      213: 4098660244104762599
-    second: bubble_grid_1
+      213: -24977376602249619
+    second: grid_canard_n1_1
   - first:
-      213: -4352220762544605444
-    second: bubble_grid_2
+      213: 7955354599064241590
+    second: grid_canard_n1_2
   - first:
-      213: -1745354593685567737
-    second: bubble_grid_3
+      213: -8232913887596328528
+    second: grid_canard_n1_3
   - first:
-      213: 8887592335216987165
-    second: bubble_grid_4
+      213: 2350001526698187816
+    second: grid_canard_n1_4
   - first:
-      213: -1669652591207441327
-    second: bubble_grid_5
-  - first:
-      213: -155372215797789372
-    second: bubble_grid_6
-  - first:
-      213: -5773497748311891274
-    second: bubble_grid_7
-  - first:
-      213: 7613536905020612995
-    second: bubble_grid_8
-  - first:
-      213: 5564242027014886235
-    second: bubble_grid_9
-  - first:
-      213: -3170203246195962173
-    second: bubble_grid_10
-  - first:
-      213: -6929672784315626412
-    second: bubble_grid_11
-  - first:
-      213: -237976584927838976
-    second: bubble_grid_12
-  - first:
-      213: -7134753670798499779
-    second: bubble_grid_13
-  - first:
-      213: -4198652297389356741
-    second: bubble_grid_14
-  - first:
-      213: -5937685071494878082
-    second: bubble_grid_15
-  - first:
-      213: 5044528385981809436
-    second: bubble_grid_16
-  - first:
-      213: 3736464315681869390
-    second: bubble_grid_17
-  - first:
-      213: 3065281273811835064
-    second: bubble_grid_18
-  - first:
-      213: -8785635138662425922
-    second: bubble_grid_19
-  - first:
-      213: -783146268804749161
-    second: bubble_grid_20
+      213: 6068564648091760120
+    second: grid_canard_n1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bubble_grid_0
+      name: grid_canard_n1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -175,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 742688a2d6852e5499410db371e879f4
-      internalID: 835233708
+      spriteID: 75f4c3b7106775646844b8c450ce00b7
+      internalID: -522154991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_grid_1
+      name: grid_canard_n1_1
       rect:
         serializedVersion: 2
         x: 480
@@ -197,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ea481e3474d1943995491e46c80d5d
-      internalID: -1816670300
+      spriteID: 4c9cd91c0108de6489ed702b5e214a02
+      internalID: 1395151737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_grid_2
+      name: grid_canard_n1_2
       rect:
         serializedVersion: 2
         x: 960
@@ -219,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f7520a0e9a4f14d9dd8e38bb61a08a
-      internalID: 730025866
+      spriteID: 919910160e5391a48a5aa329ead1a13d
+      internalID: -648227813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_grid_3
+      name: grid_canard_n1_3
       rect:
         serializedVersion: 2
         x: 0
@@ -241,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19b245bc0d8b4d42a40602607d12c88
-      internalID: -389140124
+      spriteID: 0cb63ed42d275104ebd11cd5e33cee07
+      internalID: -1436442246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_grid_4
+      name: grid_canard_n1_4
       rect:
         serializedVersion: 2
         x: 480
@@ -263,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e686caa756233d14591b226e186897e1
-      internalID: 1975672283
+      spriteID: ed894539ff83cdc4a912d5c924d880c4
+      internalID: 672404145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bubble_grid_5
+      name: grid_canard_n1_5
       rect:
         serializedVersion: 2
         x: 960
@@ -285,52 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d51095a6e633a944abe555149c365f15
-      internalID: -2010221484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_grid_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bb1ac8732832b648bbcbaa59381a7f8
-      internalID: -1973661227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bubble_grid_7
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16384f2da02820649984399fb3d0652f
-      internalID: 869698433
+      spriteID: a2122226e77fce74fb79e1e2020b0986
+      internalID: -1460854441
       vertices: []
       indices: 
       edges: []
@@ -339,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5d91b62b2c1941744a2fae1faaa38ff4
+    spriteID: 9e874df68d4817046b37edbb28e50878
     internalID: 0
     vertices: []
     indices: 
@@ -349,14 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bubble_grid_0: 835233708
-      bubble_grid_1: -1816670300
-      bubble_grid_2: 730025866
-      bubble_grid_3: -389140124
-      bubble_grid_4: 1975672283
-      bubble_grid_5: -2010221484
-      bubble_grid_6: -1973661227
-      bubble_grid_7: 869698433
+      grid_canard_n1_0: -522154991
+      grid_canard_n1_1: 1395151737
+      grid_canard_n1_2: -648227813
+      grid_canard_n1_3: -1436442246
+      grid_canard_n1_4: 672404145
+      grid_canard_n1_5: -1460854441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
