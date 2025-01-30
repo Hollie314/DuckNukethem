@@ -1,11 +1,9 @@
-using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class SpeedButton : MonoBehaviour
+public class DamageButton : MonoBehaviour
 {
-    public TextMeshProUGUI speedCostText;
+    public TextMeshProUGUI damageCostText;
     public Soldier soldier;
     Player player;
     public int upCost = 1;
@@ -14,17 +12,17 @@ public class SpeedButton : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        speedCostText.text = upCost.ToString();
+        damageCostText.text = upCost.ToString();
     }
 
-    public void AddSpeed()
+    public void AddDamage()
     {
         if (upCost <= player.GetCoin() && player.GetCoin() - upCost != 0)
         {
-            soldier.MoveSpeed += 1f;
+            soldier.nbAtk += 1;
             player.SetCoin(player.GetCoin() - upCost);
             upCost += addCost;
-            speedCostText.text = upCost.ToString();
+            damageCostText.text = upCost.ToString();
             addCost *= 2;
         }
     }
