@@ -37,16 +37,28 @@ PrefabInstance:
       value: Soldier2
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3038710285514780096, guid: b685887a6e4fe2246a67e6f4c2e8621b, type: 3}
+    - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.g
-      value: 0.6325705
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.x
