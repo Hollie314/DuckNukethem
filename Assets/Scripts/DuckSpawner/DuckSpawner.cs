@@ -10,8 +10,9 @@ public class DuckSpawner : MonoBehaviour
 {
     bool canSpawn = true;
     Coin coin;
+    public Transform playerUI;
     
-    private List<Duck> ducks = new List<Duck>();
+    public List<Duck> ducks = new List<Duck>();
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class DuckSpawner : MonoBehaviour
     {
         if (canSpawn == true && GetDuckNumber()<=4 && coin.CanISpawnDuck(prefab.Cost) == true)
         {
-            Duck duck = Instantiate(prefab);
+            Duck duck = Instantiate(prefab, playerUI);
             duck.spawner = this;
             ducks.Add(duck);
             canSpawn = false;

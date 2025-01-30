@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Duck
   - UpgradeUI
+  - AutoSpawnSoldier
   layers:
   - Default
   - TransparentFX

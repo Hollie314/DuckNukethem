@@ -6,17 +6,18 @@ using UnityEngine.UI;
 public class Coin : MonoBehaviour
 {
     public Player player;
-    public Button button;
+    public GameObject thisButton;
+    public Button buttonUpgrade;
     public void UnlockButton(int coinNeed)
     {
-        if (coinNeed <= player.GetCoin())
+        if (coinNeed <= player.GetCoin() && player.GetCoin() - coinNeed >= 0)
         {
-            Destroy(gameObject);
+            thisButton.SetActive(false);
             player.SetCoin(player.GetCoin() - coinNeed);
             if (gameObject.name == "UnlockSoldier3")
             {
-                button.gameObject.GetComponent<Image>().enabled = true;
-                button.enabled = true;
+                buttonUpgrade.gameObject.GetComponent<Image>().enabled = true;
+                buttonUpgrade.enabled = true;
             }
         }
     }

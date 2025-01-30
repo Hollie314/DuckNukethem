@@ -30,7 +30,7 @@ public class Soldier : Duck
 
     IEnumerator DestroyDuck()
     {
-        yield return new WaitForSeconds(3f/MoveSpeed);
+        yield return new WaitForSeconds(100f/MoveSpeed);
         Die(nbAtk, CoinGain);
     }
 }
