@@ -16,12 +16,17 @@ public class Duck : MonoBehaviour
 
     public void Move()
     { 
-        transform.position = new Vector3(transform.position.x + MoveSpeed*Time.deltaTime, transform.position.y, 0);
+        transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
     }
 
     public void Die(int NumberOfAtkUntilDie,int Add)
     {
-        spawner.KillDuck(this);
+        if (this.CompareTag("Soldier") == true)
+            spawner.KillDuck(this);
+        else if (this.CompareTag("AutoSpawnSoldier") == true)
+        {
+            Destroy(this.gameObject);
+        }
         bubble.SubtractBubble(NumberOfAtkUntilDie);
         player.SetCoin(player.GetCoin() + Add);
     }

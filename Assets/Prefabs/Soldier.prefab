@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4929011057673220172}
   m_Layer: 0
   m_Name: Soldier
-  m_TagString: Soldier
+  m_TagString: AutoSpawnSoldier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   spawner: {fileID: 0}
   player: {fileID: 0}
   bubble: {fileID: 0}
-  MoveSpeed: 3
+  MoveSpeed: 100
   nbAtk: 1
   Cost: 1
   CoinGain: 2
