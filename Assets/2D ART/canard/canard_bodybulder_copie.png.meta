@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: c421b05d72458934ea5c04b75c73e54b
+guid: 66dbaf0863043b34cb4afa0385517c60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9219687324374518935
-    second: grid_canard_n1_0
+      213: 3038221236756756353
+    second: canard_bodybulder_copie_0
   - first:
-      213: -24977376602249619
-    second: grid_canard_n1_1
-  - first:
-      213: 7955354599064241590
-    second: grid_canard_n1_2
-  - first:
-      213: -8232913887596328528
-    second: grid_canard_n1_3
-  - first:
-      213: 2350001526698187816
-    second: grid_canard_n1_4
-  - first:
-      213: 6068564648091760120
-    second: grid_canard_n1_5
+      213: 8017063597599594639
+    second: canard_bodybulder_copie_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grid_canard_n1_0
+      name: canard_bodybulder_copie_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 960
-        width: 480
-        height: 480
+        x: 96
+        y: 223
+        width: 1777
+        height: 1730
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 75f4c3b7106775646844b8c450ce00b7
-      internalID: -522154991
+      spriteID: 1873fed1e1ee92a20800000000000000
+      internalID: 3038221236756756353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grid_canard_n1_1
+      name: canard_bodybulder_copie_1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 960
-        width: 480
-        height: 480
+        x: 783
+        y: 196
+        width: 10
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4c9cd91c0108de6489ed702b5e214a02
-      internalID: 1395151737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid_canard_n1_2
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 960
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 919910160e5391a48a5aa329ead1a13d
-      internalID: -648227813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid_canard_n1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 480
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cb63ed42d275104ebd11cd5e33cee07
-      internalID: -1436442246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid_canard_n1_4
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 480
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed894539ff83cdc4a912d5c924d880c4
-      internalID: 672404145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid_canard_n1_5
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 480
-        width: 480
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2122226e77fce74fb79e1e2020b0986
-      internalID: -1460854441
+      spriteID: f8893a4add4524f60800000000000000
+      internalID: 8017063597599594639
       vertices: []
       indices: 
       edges: []
@@ -250,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9e874df68d4817046b37edbb28e50878
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grid_canard_n1_0: -522154991
-      grid_canard_n1_1: 1395151737
-      grid_canard_n1_2: -648227813
-      grid_canard_n1_3: -1436442246
-      grid_canard_n1_4: 672404145
-      grid_canard_n1_5: -1460854441
+      canard_bodybulder_copie_0: 3038221236756756353
+      canard_bodybulder_copie_1: 8017063597599594639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
