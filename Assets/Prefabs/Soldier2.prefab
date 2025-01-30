@@ -36,13 +36,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier2
       objectReference: {fileID: 0}
+    - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6325705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.z
