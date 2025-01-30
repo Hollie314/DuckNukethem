@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Savon_UI_0: -8518426532753181459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

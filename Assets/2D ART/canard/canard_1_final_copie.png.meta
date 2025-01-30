@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canard_1_final_copie_0: 2924401233024542527
+      canard_1_final_copie_1: 479067339651967230
+      canard_1_final_copie_2: -3644339715106746823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

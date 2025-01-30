@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armoire_UI_0: -6601630220601349302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

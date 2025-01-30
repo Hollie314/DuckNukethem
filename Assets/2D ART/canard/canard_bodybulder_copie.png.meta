@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canard_bodybulder_copie_0: 3038221236756756353
+      canard_bodybulder_copie_1: 8017063597599594639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
