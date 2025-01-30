@@ -5,20 +5,24 @@ public class Duck : MonoBehaviour
     [HideInInspector]
     public DuckSpawner spawner;
     public Player player;
+    public Bubble bubble;
+    public float MoveSpeed = 3;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        bubble = GameObject.FindGameObjectWithTag("Bubble").GetComponent<Bubble>();
     }
 
     public void Move()
     { 
-        transform.position = new Vector3(transform.position.x + 3*Time.deltaTime, transform.position.y, 0);
+        transform.position = new Vector3(transform.position.x + MoveSpeed*Time.deltaTime, transform.position.y, 0);
     }
 
-    public void Die(int NumberOfAtkUntilDie)
+    public void Die(int NumberOfAtkUntilDie,int Add)
     {
         spawner.KillDuck(this);
-        player.SetCoin(player.GetCoin() + NumberOfAtkUntilDie);
+        bubble.SubtractBubble(NumberOfAtkUntilDie);
+        player.SetCoin(player.GetCoin() + Add);
     }
 }

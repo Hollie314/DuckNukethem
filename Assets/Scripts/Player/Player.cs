@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private int coin;
+    private int coin = 1;
     public TextMeshProUGUI coinText;
 
     private void Start()

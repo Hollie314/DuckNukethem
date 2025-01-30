@@ -8,17 +8,21 @@ using UnityEngine.UI;
 using Object = System.Object;
 public class DuckSpawner : MonoBehaviour
 {
-    DuckInFile duckInFile;
     bool canSpawn = true;
+    Coin coin;
     
     private List<Duck> ducks = new List<Duck>();
-    
-    public void SpawnDuck(GameObject prefab)
+
+    private void Start()
     {
-        if (canSpawn == true && GetDuckNumber()<=4)
+        coin = GameObject.FindGameObjectWithTag("Coin").GetComponent<Coin>();
+    }
+
+    public void SpawnDuck(Soldier prefab)
+    {
+        if (canSpawn == true && GetDuckNumber()<=4 && coin.CanISpawnDuck(prefab.Cost) == true)
         {
-            GameObject duckGo = Instantiate(prefab);
-            Duck duck = duckGo.GetComponent<Duck>();
+            Duck duck = Instantiate(prefab);
             duck.spawner = this;
             ducks.Add(duck);
             canSpawn = false;
