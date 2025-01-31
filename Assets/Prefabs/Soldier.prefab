@@ -86,6 +86,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bubble: {fileID: 0}
   MoveSpeed: 100
+  anim: {fileID: 0}
   nbAtk: 1
   Cost: 1
   CoinGain: 2
