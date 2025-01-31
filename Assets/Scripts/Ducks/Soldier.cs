@@ -9,6 +9,7 @@ public class Soldier : Duck
     public int nbAtk = 1;
     public int Cost;
     public int CoinGain;
+    
     void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Bubble"))
