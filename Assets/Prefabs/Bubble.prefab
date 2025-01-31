@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1090428238261800493}
   - component: {fileID: 317764580118508536}
   - component: {fileID: 4061835730696633363}
-  - component: {fileID: 6587388911213299254}
   - component: {fileID: 9148319859244756568}
   - component: {fileID: 3376926962065056821}
+  - component: {fileID: 1413782077105055097}
+  - component: {fileID: 1222968091841437352}
+  - component: {fileID: 3564882992329641439}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Bubble
@@ -38,8 +40,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 220.99994, y: -37.00001}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &317764580118508536
 MonoBehaviour:
@@ -98,8 +100,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &6587388911213299254
-BoxCollider2D:
+--- !u!114 &9148319859244756568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167502714000707686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8011dd2433ae4c343bfdaea40091698a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleText: {fileID: 7000323752760362047}
+  animator: {fileID: 0}
+  bubbleAnimator: {fileID: 0}
+  bubbleAnimator2: {fileID: 0}
+  bubbleAnimator3: {fileID: 0}
+--- !u!222 &3376926962065056821
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167502714000707686}
+  m_CullTransparentMesh: 1
+--- !u!58 &1413782077105055097
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,39 +159,49 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -200, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 400, y: 400}
-  m_EdgeRadius: 0
---- !u!114 &9148319859244756568
-MonoBehaviour:
+  m_Offset: {x: -503.46, y: 18.04}
+  m_Radius: 300
+--- !u!95 &1222968091841437352
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4167502714000707686}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8011dd2433ae4c343bfdaea40091698a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubbleText: {fileID: 7000323752760362047}
---- !u!222 &3376926962065056821
-CanvasRenderer:
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a36b2919444c204daab87668f6d6841, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &3564882992329641439
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4167502714000707686}
-  m_CullTransparentMesh: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 82fd89830a6183c418b535cc7b20d2d5, type: 2}
+  - {fileID: 7400000, guid: 4d06ea297be067b4292e415613d112bd, type: 2}
+  - {fileID: 7400000, guid: cb6c45633c0e5cf4c8fa4cb503141117, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &8219458934232735726
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +294,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.6
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using TMPro;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
@@ -7,8 +9,13 @@ public class Bubble : MonoBehaviour
     private int MaxBubble = 1;
     private int totalBubble;
     public TextMeshProUGUI bubbleText;
+    public Animator animator;
+    public AnimatorController bubbleAnimator;
+    public AnimatorController bubbleAnimator2;
+    public AnimatorController bubbleAnimator3;
     private void Start()
     {
+        animator.runtimeAnimatorController = bubbleAnimator;
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
     }
@@ -18,6 +25,8 @@ public class Bubble : MonoBehaviour
         MaxBubble *= 10;
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
+        animator.runtimeAnimatorController = bubbleAnimator2;
+        StartCoroutine(RespawnBubble());
     }
     public int GetBubble()
     {
@@ -33,9 +42,16 @@ public class Bubble : MonoBehaviour
         {
             this.totalBubble -= amount;
             SetBubbleNumber(GetBubble());
+            animator.runtimeAnimatorController = bubbleAnimator3;
             if (totalBubble <= 0)
             {
                 ResetBubbleNumber();
             }
         }
+
+    IEnumerator RespawnBubble()
+    {
+        yield return new WaitForSeconds(0.5f);
+        animator.runtimeAnimatorController = bubbleAnimator;
+    }
 }    

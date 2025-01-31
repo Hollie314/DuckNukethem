@@ -40,6 +40,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier2
       objectReference: {fileID: 0}
+    - target: {fileID: 6429941207944933656, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: a030aec58cbebfd4b85349d9c3470aca, type: 3}
+    - target: {fileID: 6429941207944933656, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a030aec58cbebfd4b85349d9c3470aca, type: 3}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Sprite
       value: 
