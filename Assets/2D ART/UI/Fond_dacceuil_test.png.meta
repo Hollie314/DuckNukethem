@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fond_dacceuil_0: 7666069119899745269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
