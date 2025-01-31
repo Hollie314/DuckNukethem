@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: fabe85c2e15190240a44ad960763b5fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2869973106799096626
+    second: canard_matteo_0
+  - first:
+      213: -2858322817781437331
+    second: canard_matteo_1
+  - first:
+      213: -7667498849635630148
+    second: canard_matteo_2
+  - first:
+      213: 1184627042249211660
+    second: canard_matteo_3
+  - first:
+      213: 7074373982022713213
+    second: canard_matteo_4
+  - first:
+      213: 4193659338039065812
+    second: canard_matteo_5
+  - first:
+      213: -2374806593219883858
+    second: canard_matteo_6
+  - first:
+      213: 2150285509982711124
+    second: canard_matteo_7
+  - first:
+      213: 1496124750759272530
+    second: canard_matteo_8
+  - first:
+      213: -300822884609194134
+    second: canard_matteo_9
+  - first:
+      213: -1959356527716872911
+    second: canard_matteo_10
+  - first:
+      213: -6622942591028264460
+    second: canard_matteo_11
+  - first:
+      213: 6001581143713893105
+    second: canard_matteo_12
+  - first:
+      213: -6094067121934616389
+    second: canard_matteo_13
+  - first:
+      213: 5066264420429778823
+    second: canard_matteo_14
+  - first:
+      213: 907202310385707504
+    second: canard_matteo_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: canard_matteo_0
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 723
+        width: 220
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccc0564aaecb28d0800000000000000
+      internalID: -2869973106799096626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_1
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 723
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c6eb09a823558d0800000000000000
+      internalID: -2858322817781437331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_2
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 737
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb380cf9b62979590800000000000000
+      internalID: -7667498849635630148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_3
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 741
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ff59cb404a07010800000000000000
+      internalID: 1184627042249211660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_4
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 753
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fbabea7a93d2260800000000000000
+      internalID: 7074373982022713213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_5
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 730
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc71d0f2fed23a30800000000000000
+      internalID: 4193659338039065812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_6
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 726
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac8fd85cfdfa0fd0800000000000000
+      internalID: -2374806593219883858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_7
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 773
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d6034574957dd10800000000000000
+      internalID: 2150285509982711124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 773
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2502da4b88d43c410800000000000000
+      internalID: 1496124750759272530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_9
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 789
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a678f862e2343dbf0800000000000000
+      internalID: -300822884609194134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_10
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 723
+        width: 188
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dc7118e97fec4e0800000000000000
+      internalID: -1959356527716872911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_11
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 802
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f184f5adc49614a0800000000000000
+      internalID: -6622942591028264460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_12
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 789
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1facfb1a046e94350800000000000000
+      internalID: 6001581143713893105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_13
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 788
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb833b78d368d6ba0800000000000000
+      internalID: -6094067121934616389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_14
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 793
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fcaede5acfe4640800000000000000
+      internalID: 5066264420429778823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canard_matteo_15
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 214
+        width: 1826
+        height: 2098
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f924f9d1b7079c00800000000000000
+      internalID: 907202310385707504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      canard_matteo_0: -2869973106799096626
+      canard_matteo_1: -2858322817781437331
+      canard_matteo_10: -1959356527716872911
+      canard_matteo_11: -6622942591028264460
+      canard_matteo_12: 6001581143713893105
+      canard_matteo_13: -6094067121934616389
+      canard_matteo_14: 5066264420429778823
+      canard_matteo_15: 907202310385707504
+      canard_matteo_2: -7667498849635630148
+      canard_matteo_3: 1184627042249211660
+      canard_matteo_4: 7074373982022713213
+      canard_matteo_5: 4193659338039065812
+      canard_matteo_6: -2374806593219883858
+      canard_matteo_7: 2150285509982711124
+      canard_matteo_8: 1496124750759272530
+      canard_matteo_9: -300822884609194134
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
