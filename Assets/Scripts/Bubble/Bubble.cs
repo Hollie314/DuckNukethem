@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using TMPro;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
@@ -10,9 +9,9 @@ public class Bubble : MonoBehaviour
     private int totalBubble;
     public TextMeshProUGUI bubbleText;
     public Animator animator;
-    public AnimatorController bubbleAnimator;
-    public AnimatorController bubbleAnimator2;
-    public AnimatorController bubbleAnimator3;
+    public RuntimeAnimatorController bubbleAnimator;
+    public RuntimeAnimatorController bubbleAnimator2;
+    public RuntimeAnimatorController bubbleAnimator3;
     private void Start()
     {
         animator.runtimeAnimatorController = bubbleAnimator;
