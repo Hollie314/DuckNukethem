@@ -8,20 +8,26 @@ public class AutomatisateButton : MonoBehaviour
     public Soldier[] soldier;
     DuckSpawner duckSpawner;
     Player player;
-    public int Cost = 1;
-    float timerSpawn = 5f;
+    public int cost = 100;
+    float timerSpawn = 3f;
     public Transform playerUI;
+    public TextMeshProUGUI autoSpawnText;
 
     private void Start()
     {
+        autoSpawnText.text = cost.ToString();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     public void AutoSpawn()
     {
-        if (Cost <= player.GetCoin() && player.GetCoin() - Cost != 0)
+        if (cost <= player.GetCoin() && player.GetCoin() - cost != 0)
         {
                 StartCoroutine(SpawnDuck());
+                player.SetCoin(player.GetCoin() - cost);
+                cost *= 10;
+                autoSpawnText.text = cost.ToString();
+                
         }
         IEnumerator SpawnDuck()
         {

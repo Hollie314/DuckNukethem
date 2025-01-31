@@ -86,7 +86,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bubble: {fileID: 0}
   MoveSpeed: 100
-  anim: {fileID: 0}
+  walkSound: {fileID: 6442439933085357182, guid: 5db52c2b2ef1d9a4abe21df04bddb45f, type: 3}
   nbAtk: 1
   Cost: 1
   CoinGain: 2

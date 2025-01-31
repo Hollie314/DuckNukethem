@@ -12,7 +12,7 @@ public class Coin : MonoBehaviour
     public GameObject spawnButton;
     public void UnlockButton(int coinNeed)
     {
-        if (coinNeed <= player.GetCoin() && player.GetCoin() - coinNeed >= 0)
+        if (coinNeed <= player.GetCoin() && player.GetCoin() - coinNeed > 0)
         {
             thisButton.SetActive(false);
             spawnButton.SetActive(true);

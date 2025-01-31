@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e03ea26927089cb40b67cfc33e9c8243
+guid: d5c6eabe418352d4b9c33742d43455bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7666069119899745269
-    second: Fond_dacceuil_0
+      213: 3027914163809767815
+    second: Fond_dacceuil_test_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fond_dacceuil_0
+      name: Fond_dacceuil_test_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fb373b7f39536a60800000000000000
-      internalID: 7666069119899745269
+      spriteID: 7815140b3ef450a20800000000000000
+      internalID: 3027914163809767815
       vertices: []
       indices: 
       edges: []

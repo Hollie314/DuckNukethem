@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: CoinGain
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 16101856458004227, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: walkSound
+      value: 
+      objectReference: {fileID: 4656911130728142829, guid: 9ffb05d9827af0e4589df3d800f6e423, type: 3}
     - target: {fileID: 1378524486717893066, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.g
       value: 0.13868357
