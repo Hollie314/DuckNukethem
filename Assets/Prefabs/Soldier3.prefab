@@ -37,16 +37,28 @@ PrefabInstance:
       value: Soldier3
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8178814941429785169, guid: eb3599b0baac2224ca02d01ee3081866, type: 3}
+    - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 124
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 7988491124991711022, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_LocalPosition.x

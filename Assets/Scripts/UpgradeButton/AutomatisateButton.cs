@@ -27,8 +27,8 @@ public class AutomatisateButton : MonoBehaviour
         {
             foreach (Soldier soldiers in soldier)
             {
-                soldiers.tag = "AutoSpawnSoldier";
-                Instantiate(soldiers, playerUI);
+                Duck duck = Instantiate(soldiers, playerUI);
+                duck.tag = "AutoSpawnSoldier";
                 yield return new WaitForSeconds(timerSpawn);
             }
             

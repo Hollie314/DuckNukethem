@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ffb731ea8ca4eb46b8026128a25bcd6
+guid: 63a39d6d67297bb4aa3acbdd4f1d6ea8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3359323292139578904
-    second: blanc_0
+      213: 2157934366864256423
+    second: Bas_des_canards_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blanc_0
+      name: Bas_des_canards_0
       rect:
         serializedVersion: 2
-        x: 124
-        y: 123
-        width: 257
-        height: 257
+        x: 736
+        y: 305
+        width: 454
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e91356a3494161d0800000000000000
-      internalID: -3359323292139578904
+      spriteID: 7ad2d899fd582fd10800000000000000
+      internalID: 2157934366864256423
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blanc_0: -3359323292139578904
+      Bas_des_canards_0: 2157934366864256423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
