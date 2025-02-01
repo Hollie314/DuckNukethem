@@ -21,7 +21,7 @@ public class SpeedButton : MonoBehaviour
     {
         if (upCost <= player.GetCoin() && player.GetCoin() - upCost != 0)
         {
-            soldier.MoveSpeed *= 1.1f;
+            soldier.MoveSpeed += 20f;
             player.SetCoin(player.GetCoin() - upCost);
             upCost += addCost;
             speedCostText.text = upCost.ToString();

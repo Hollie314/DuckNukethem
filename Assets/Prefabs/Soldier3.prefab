@@ -25,6 +25,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 16101856458004227, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
+      propertyPath: MoveSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 16101856458004227, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: walkSound
       value: 
       objectReference: {fileID: 4656911130728142829, guid: 9ffb05d9827af0e4589df3d800f6e423, type: 3}
@@ -51,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8178814941429785169, guid: eb3599b0baac2224ca02d01ee3081866, type: 3}
+      objectReference: {fileID: 3038221236756756353, guid: 66dbaf0863043b34cb4afa0385517c60, type: 3}
     - target: {fileID: 7052237306795800559, guid: 92e551f21d975a644887a7fcadff019f, type: 3}
       propertyPath: m_Color.b
       value: 1
