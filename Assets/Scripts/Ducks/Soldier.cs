@@ -25,13 +25,7 @@ public class Soldier : Duck
         }
         else
         {
-            StartCoroutine(DestroyDuck());
+            Die(nbAtk, CoinGain);
         }
-    }
-
-    IEnumerator DestroyDuck()
-    {
-        yield return new WaitForSeconds(100f/MoveSpeed);
-        Die(nbAtk, CoinGain);
     }
 }

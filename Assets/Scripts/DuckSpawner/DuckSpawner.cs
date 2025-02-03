@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.UI;
-using Object = System.Object;
+
 public class DuckSpawner : MonoBehaviour
 {
     bool canSpawn = true;
@@ -21,7 +17,7 @@ public class DuckSpawner : MonoBehaviour
 
     public void SpawnDuck(Soldier prefab)
     {
-        if (canSpawn == true && GetDuckNumber()<=4 && coin.CanISpawnDuck(prefab.Cost) == true)
+        if (canSpawn == true && GetDuckNumber()<=9 && coin.CanISpawnDuck(prefab.Cost) == true)
         {
             Duck duck = Instantiate(prefab, playerUI);
             duck.spawner = this;
@@ -31,7 +27,7 @@ public class DuckSpawner : MonoBehaviour
         }
         IEnumerator canISpawn()
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             canSpawn = true;
         }
     }
