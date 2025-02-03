@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d5baca0649b2f64682791b6d89cc597
+guid: d5c6eabe418352d4b9c33742d43455bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5834268802046750368
-    second: Sans_titre-1_copie_0
+      213: 3027914163809767815
+    second: Fond_dacceuil_test_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,12 +72,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sans_titre-1_copie_0
+      name: Fond_dacceuil_test_0
       rect:
         serializedVersion: 2
-        x: 106
-        y: 462
-        width: 1814
-        height: 1229
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0611cd19f63880fa0800000000000000
-      internalID: -5834268802046750368
+      spriteID: 7815140b3ef450a20800000000000000
+      internalID: 3027914163809767815
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sans_titre-1_copie_0: -5834268802046750368
+      Fond_dacceuil_0: 7666069119899745269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
