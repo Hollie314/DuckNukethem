@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1090428238261800493}
   - component: {fileID: 317764580118508536}
   - component: {fileID: 4061835730696633363}
-  - component: {fileID: 9148319859244756568}
   - component: {fileID: 3376926962065056821}
   - component: {fileID: 1413782077105055097}
   - component: {fileID: 1222968091841437352}
   - component: {fileID: 3564882992329641439}
+  - component: {fileID: 9148319859244756568}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Bubble
@@ -100,23 +100,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &9148319859244756568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4167502714000707686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8011dd2433ae4c343bfdaea40091698a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubbleText: {fileID: 7000323752760362047}
-  animator: {fileID: 0}
-  bubbleAnimator: {fileID: 0}
-  bubbleAnimator2: {fileID: 0}
-  bubbleAnimator3: {fileID: 0}
 --- !u!222 &3376926962065056821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -202,6 +185,23 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &9148319859244756568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167502714000707686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8011dd2433ae4c343bfdaea40091698a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleText: {fileID: 7000323752760362047}
+  animator: {fileID: 1222968091841437352}
+  bubbleAnimator: {fileID: 0}
+  bubbleAnimator2: {fileID: 0}
+  bubbleAnimator3: {fileID: 0}
 --- !u!1 &8219458934232735726
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,9 @@ public class Bubble : MonoBehaviour
     public RuntimeAnimatorController bubbleAnimator3;
     private void Start()
     {
-        animator.runtimeAnimatorController = bubbleAnimator;
+        Debug.Log("les animations clips wtf : " + animator.runtimeAnimatorController.animationClips[0]+" si je dis pas de connerie c'est la même chose que : "+bubbleAnimator);
+        animator.Play("spawn");
+        //animator.runtimeAnimatorController = bubbleAnimator;
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
     }
@@ -24,8 +26,9 @@ public class Bubble : MonoBehaviour
         MaxBubble *= 10;
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
-        animator.runtimeAnimatorController = bubbleAnimator2;
-        StartCoroutine(RespawnBubble());
+        animator.SetTrigger("Explode");
+        //animator.runtimeAnimatorController = bubbleAnimator2;
+        //StartCoroutine(RespawnBubble());
     }
     public int GetBubble()
     {
@@ -41,7 +44,8 @@ public class Bubble : MonoBehaviour
         {
             this.totalBubble -= amount;
             SetBubbleNumber(GetBubble());
-            animator.runtimeAnimatorController = bubbleAnimator3;
+            //animator.runtimeAnimatorController = bubbleAnimator3;
+            animator.SetTrigger("Get_Hit");
             if (totalBubble <= 0)
             {
                 ResetBubbleNumber();
@@ -51,6 +55,6 @@ public class Bubble : MonoBehaviour
     IEnumerator RespawnBubble()
     {
         yield return new WaitForSeconds(0.5f);
-        animator.runtimeAnimatorController = bubbleAnimator;
+        //animator.runtimeAnimatorController = bubbleAnimator;
     }
 }    
