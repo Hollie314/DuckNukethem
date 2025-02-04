@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 610d183c6a7b5f04c99cccf90e1b55b7
+guid: d6411a9ca43acd8459332f2a64bbc730
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -117,7 +117,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 32
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -130,6 +130,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CANARD_MATTEO-new_0: 3480682944049141746
+      CANARD_MATTEO-new_1: 1769792821806936286
+      CANARD_MATTEO-new_10: -1783876000976017055
+      CANARD_MATTEO-new_11: 7828861053459301231
+      CANARD_MATTEO-new_12: 4149586730371129418
+      CANARD_MATTEO-new_13: 594895090775491418
+      CANARD_MATTEO-new_14: -639111065358259855
+      CANARD_MATTEO-new_15: 8292522994176132069
+      CANARD_MATTEO-new_2: 5465414648609156107
+      CANARD_MATTEO-new_3: 8443440995400296719
+      CANARD_MATTEO-new_4: -6148241665003259699
+      CANARD_MATTEO-new_5: -5520379784160125222
+      CANARD_MATTEO-new_6: 9190794998806381510
+      CANARD_MATTEO-new_7: -178996863580676664
+      CANARD_MATTEO-new_8: 115129101011417285
+      CANARD_MATTEO-new_9: -3770571901741167966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
