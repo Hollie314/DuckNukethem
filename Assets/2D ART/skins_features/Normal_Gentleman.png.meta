@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: e75dda71037ee3d468efee39a8c54ce2
+guid: 3002c4e67e0f3ef47bbb150c09bf3ad3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6856394550326182981
-    second: "Cr\xEAte_0"
+      213: 6356094566617523756
+    second: Normal_Gentleman_0
+  - first:
+      213: 5682001969699917282
+    second: Normal_Gentleman_1
+  - first:
+      213: -8659265943086823537
+    second: Normal_Gentleman_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +102,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cr\xEAte_0"
+      name: Normal_Gentleman_0
       rect:
         serializedVersion: 2
-        x: 317
-        y: 239
-        width: 147
-        height: 96
+        x: 333
+        y: 121
+        width: 124
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbb32e3bb7139d0a0800000000000000
-      internalID: -6856394550326182981
+      spriteID: c2627021552653850800000000000000
+      internalID: 6356094566617523756
       vertices: []
       indices: 
       edges: []
@@ -138,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ed7a106a12ec94546bccb54790b042df
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +141,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Cr\xEAte_0": -6856394550326182981
+      Normal_Gentleman_0: 6356094566617523756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

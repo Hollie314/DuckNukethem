@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e75dda71037ee3d468efee39a8c54ce2
+guid: 4abdb3a5ab98f3744bd56b50f09c284a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6856394550326182981
-    second: "Cr\xEAte_0"
+      213: 985620537990273906
+    second: Militaire_Poireau_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -77,7 +77,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cr\xEAte_0"
+      name: Militaire_Poireau_0
       rect:
         serializedVersion: 2
-        x: 317
-        y: 239
-        width: 147
-        height: 96
+        x: 376
+        y: 128
+        width: 170
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbb32e3bb7139d0a0800000000000000
-      internalID: -6856394550326182981
+      spriteID: 27b5d3248a0adad00800000000000000
+      internalID: 985620537990273906
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Cr\xEAte_0": -6856394550326182981
+      Militaire_Poireau_0: 985620537990273906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
