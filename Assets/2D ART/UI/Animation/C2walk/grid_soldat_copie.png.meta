@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grid_soldat_copie_0: 1712273155117338979
+      grid_soldat_copie_1: -7135745915244696325
+      grid_soldat_copie_2: 4878413451333822478
+      grid_soldat_copie_3: 4675823816793265661
+      grid_soldat_copie_4: 1239988380089826785
+      grid_soldat_copie_5: -9085724638117936963
+      grid_soldat_copie_6: 6710942482232350419
+      grid_soldat_copie_7: -282748115740507562
+      grid_soldat_copie_8: 590550331018819530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

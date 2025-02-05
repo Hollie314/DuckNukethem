@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Caddie_icone_0: -1885894692313147737
+      Caddie_icone_1: -4223151767680422460
+      Caddie_icone_2: -935217238501698548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

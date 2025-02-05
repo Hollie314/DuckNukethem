@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Canard_Militaire_UI_0: -3038710285514780096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

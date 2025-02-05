@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grid_canard_n1_copie_0: 3338529601088046902
+      grid_canard_n1_copie_1: 7681484175970959809
+      grid_canard_n1_copie_2: 4426057692089826301
+      grid_canard_n1_copie_3: -1725217828770231390
+      grid_canard_n1_copie_4: -960358658625040554
+      grid_canard_n1_copie_5: 8443766422588583825
+      grid_canard_n1_copie_6: 9131460457503936319
+      grid_canard_n1_copie_7: 4191665523922591475
+      grid_canard_n1_copie_8: -5481190821340144253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
