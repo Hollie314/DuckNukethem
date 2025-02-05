@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Canard_Muscl\xE9_0": 4303920591548017675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

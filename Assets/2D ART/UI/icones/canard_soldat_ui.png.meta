@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canard_soldat_ui_0: -8429117525464790585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

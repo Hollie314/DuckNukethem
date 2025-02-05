@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      couteau_ui_0: 140452958232633178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
