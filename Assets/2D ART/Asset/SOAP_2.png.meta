@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ddf70c3537fc84d48862c165ccfb6cd2
+guid: d08b67ae3fdd5814bb614ff92b3e22f6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -106,6 +106,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SOAP_2_0: -5933599463169619294
+      SOAP_2_1: 1317704121066478568
+      SOAP_2_2: 8164337779703106993
+      SOAP_2_3: 6139610296810465993
+      SOAP_2_4: 5221346978270293028
+      SOAP_2_5: -3347329391133566097
+      SOAP_2_6: 118270826870402581
+      SOAP_2_7: 7453635119276389588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
