@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: e75dda71037ee3d468efee39a8c54ce2
+guid: 303fd60211668d045a850b1672c535b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6856394550326182981
-    second: "Cr\xEAte_0"
+      213: -7863754052867999000
+    second: Militaire_Cowboy_0
+  - first:
+      213: 8996028141196703092
+    second: Militaire_Cowboy_1
+  - first:
+      213: 508084010399130244
+    second: Militaire_Cowboy_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +102,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cr\xEAte_0"
+      name: Militaire_Cowboy_0
       rect:
         serializedVersion: 2
-        x: 317
-        y: 239
-        width: 147
-        height: 96
+        x: 316
+        y: 180
+        width: 150
+        height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbb32e3bb7139d0a0800000000000000
-      internalID: -6856394550326182981
+      spriteID: 8eab3c55a555ed290800000000000000
+      internalID: -7863754052867999000
       vertices: []
       indices: 
       edges: []
@@ -138,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8f7706945f201714c943c482848cc13b
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +141,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Cr\xEAte_0": -6856394550326182981
+      Militaire_Cowboy_0: -7863754052867999000
+      Militaire_Cowboy_1: 8996028141196703092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

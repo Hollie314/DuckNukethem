@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: e75dda71037ee3d468efee39a8c54ce2
+guid: 87d3ad9ba42c97c4dafb5b78a719e9f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6856394550326182981
-    second: "Cr\xEAte_0"
+      213: -747870123801384006
+    second: "Muscl\xE9_Fran\xE7ais_0"
+  - first:
+      213: -8288269298342783953
+    second: "Muscl\xE9_Fran\xE7ais_1"
+  - first:
+      213: 7016693287891958062
+    second: "Muscl\xE9_Fran\xE7ais_2"
+  - first:
+      213: 7116436574240874651
+    second: "Muscl\xE9_Fran\xE7ais_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +105,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cr\xEAte_0"
+      name: "Muscl\xE9_Fran\xE7ais_0"
       rect:
         serializedVersion: 2
-        x: 317
-        y: 239
-        width: 147
-        height: 96
+        x: 218
+        y: 136
+        width: 235
+        height: 236
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbb32e3bb7139d0a0800000000000000
-      internalID: -6856394550326182981
+      spriteID: abbe0b4b5180f95f0800000000000000
+      internalID: -747870123801384006
       vertices: []
       indices: 
       edges: []
@@ -138,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6cecb68a633547f4ab045657f266a3c9
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +144,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Cr\xEAte_0": -6856394550326182981
+      "Muscl\xE9_Fran\xE7ais_0": -747870123801384006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

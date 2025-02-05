@@ -72,12 +72,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ui Final_Armoire_0
+      name: "Bonton_Cr\xE9dits_0"
       rect:
         serializedVersion: 2
-        x: 17
-        y: 84
-        width: 461
-        height: 312
+        x: 15
+        y: 85
+        width: 426
+        height: 305
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe46d2d1a80f9d970800000000000000
-      internalID: 8780313424521159919
+      spriteID: a6f5270f365e97160800000000000000
+      internalID: 7023897311259549546
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9eed4a0855330ea47b804b84d7b80f39
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ui Final_Armoire_0: 8780313424521159919
+      "Bonton_Cr\xE9dits_0": 7023897311259549546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
