@@ -21,13 +21,12 @@ public class AutomatisateButton : MonoBehaviour
 
     public void AutoSpawn()
     {
-        if (cost <= player.GetCoin() && player.GetCoin() - cost != 0)
+        if (cost < player.GetCoin())
         {
                 StartCoroutine(SpawnDuck());
                 player.SetCoin(player.GetCoin() - cost);
                 cost *= 10;
                 autoSpawnText.text = cost.ToString();
-                
         }
         IEnumerator SpawnDuck()
         {
@@ -37,7 +36,6 @@ public class AutomatisateButton : MonoBehaviour
                 duck.tag = "AutoSpawnSoldier";
                 yield return new WaitForSeconds(timerSpawn);
             }
-            
             StartCoroutine(SpawnDuck());
         }
     }
