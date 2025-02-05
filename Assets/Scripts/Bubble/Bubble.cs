@@ -25,7 +25,7 @@ public class Bubble : MonoBehaviour
     {
         MaxBubble *= 10;
         totalBubble = MaxBubble;
-        SetBubbleNumber(GetBubble());
+        SetBubbleNumber(totalBubble);
         animator.SetTrigger("Explode");
         //animator.runtimeAnimatorController = bubbleAnimator2;
         //StartCoroutine(RespawnBubble());
