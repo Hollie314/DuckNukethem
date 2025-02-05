@@ -6,7 +6,7 @@ public class DuckSpawner : MonoBehaviour
 {
     bool canSpawn = true;
     Coin coin;
-    public Transform playerUI;
+    public Transform playerUI; //position de spawn
     
     public List<Duck> ducks = new List<Duck>();
 
