@@ -56,8 +56,9 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
    //deal damage to the bubble and despawn duck
    private void AttackBubble(DuckData duckType, Duck_ duck)
    {
-       boss_bubble.LooseLife(duckType.damage);
+       boss_bubble.LooseLife(duckType.GetDammage());
        DespawnDuck(duckType,duck);
+       GameManager.Instance.GainCoin(duckType.GetCoinGain());
    }
    
    //goodbye duck

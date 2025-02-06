@@ -14,7 +14,7 @@ public class Duck_ : MonoBehaviour
     {
         if (transform)
         {
-            transform.Translate(Vector3.right * (Time.deltaTime * duck_category.speed));
+            transform.Translate(Vector3.right * (Time.deltaTime * (float)duck_category.GetSpeed()));
         }
     }
 
@@ -22,7 +22,7 @@ public class Duck_ : MonoBehaviour
     {
         if (other.CompareTag("Bubble"))
         {
-            Debug.Log(" We hit the bubble ");
+            OnTargetReached?.Invoke(duck_category, this);
         }
     }
 }
