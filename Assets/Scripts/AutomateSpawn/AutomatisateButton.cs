@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class AutomatisateButton : MonoBehaviour
 {
-    public Soldier[] soldier;
-    DuckSpawner duckSpawner;
-    Player player;
+    //public Soldier[] soldier;
+   // DuckSpawner duckSpawner;
+    //Player player;
     public int cost = 100;
     float timerSpawn = 3f;
     public Transform playerUI;
@@ -16,11 +16,12 @@ public class AutomatisateButton : MonoBehaviour
     private void Start()
     {
         autoSpawnText.text = cost.ToString();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     public void AutoSpawn()
     {
+        /*
         if (cost < player.GetCoin())
         {
                 StartCoroutine(SpawnDuck());
@@ -38,5 +39,6 @@ public class AutomatisateButton : MonoBehaviour
             }
             StartCoroutine(SpawnDuck());
         }
+        */
     }
 }
