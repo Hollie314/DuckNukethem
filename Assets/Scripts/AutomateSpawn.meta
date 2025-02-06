@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/TextMesh Pro/Shaders.meta
-guid: e9f693669af91aa45ad615fc681ed29f
-========
+<<<<<<<< HEAD:Assets/Scripts/PoolingSystem.meta
 guid: 31e495866703e9849a6c2542f4b4022d
->>>>>>>> Loïs:Assets/Scripts/PoolingSystem.meta
+========
+guid: 2552c529f6be4af45bfccd33afbecc95
+>>>>>>>> Loïs:Assets/Scripts/AutomateSpawn.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

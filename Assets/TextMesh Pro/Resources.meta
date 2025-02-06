@@ -1,8 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Resources/Style Sheets.meta
+guid: 4aecb92fff08436c8303b10eab8da368
+========
 guid: 243e06394e614e5d99fab26083b707fa
+>>>>>>>> Loïs:Assets/TextMesh Pro/Resources.meta
 folderAsset: yes
+timeCreated: 1441876950
+licenseType: Pro
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
