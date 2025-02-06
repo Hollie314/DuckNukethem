@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3376926962065056821}
   - component: {fileID: 1413782077105055097}
   - component: {fileID: 1222968091841437352}
-  - component: {fileID: 3564882992329641439}
   - component: {fileID: 9148319859244756568}
   m_Layer: 0
   m_Name: Bubble
@@ -30,7 +29,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4167502714000707686}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -56,14 +55,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1908410205, guid: 8d233aae7943da24f898c363d22d452d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -166,25 +165,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &3564882992329641439
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4167502714000707686}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 82fd89830a6183c418b535cc7b20d2d5, type: 2}
-  - {fileID: 7400000, guid: 4d06ea297be067b4292e415613d112bd, type: 2}
-  - {fileID: 7400000, guid: cb6c45633c0e5cf4c8fa4cb503141117, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!114 &9148319859244756568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,11 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8011dd2433ae4c343bfdaea40091698a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubbleText: {fileID: 7000323752760362047}
   animator: {fileID: 1222968091841437352}
-  bubbleAnimator: {fileID: 0}
-  bubbleAnimator2: {fileID: 0}
-  bubbleAnimator3: {fileID: 0}
 --- !u!1 &8219458934232735726
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 50.36}
+  m_AnchoredPosition: {x: 0, y: -118.7}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2484129656449165388
@@ -269,15 +245,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bubble Number
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5429c58fc39cd1d47bf1a1c64eb62b2a, type: 2}
+  m_sharedMaterial: {fileID: 3321989045447312647, guid: 5429c58fc39cd1d47bf1a1c64eb62b2a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4290876378
+  m_fontColor: {r: 0.854902, g: 0.5764706, b: 0.7568628, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -294,7 +270,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.75
+  m_fontSize: 43.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

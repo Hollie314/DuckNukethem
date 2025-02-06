@@ -4,6 +4,9 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public static GameDatabase GameDatabase { get; private set; }
+    
+    
+    //Pour tester
     [field: SerializeField]
     public DuckManager DuckManager { get; private set; }
     

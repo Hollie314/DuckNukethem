@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     //Player money
-    private int playerCoins = 0;
+    private int playerCoins = 2;
     
     //event for UI 
     public event Action<int> OnUpdatePlayerCoin;
@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
 
     // trying to buy something from a manager

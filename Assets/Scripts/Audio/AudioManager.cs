@@ -4,7 +4,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource classic;
     public AudioSource no_coin;
-
+    public AudioSource audio_base;
       
     private void OnEnable()
     {
@@ -27,5 +27,10 @@ public class AudioManager : MonoBehaviour
     public void NotEnoughMoneySound()
     {
         no_coin.Play();
+    }
+
+    public void BasePlayAudio()
+    {
+      audio_base.Play();
     }
 }

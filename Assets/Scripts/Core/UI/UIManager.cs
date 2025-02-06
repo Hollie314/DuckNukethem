@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,11 +11,11 @@ public class UIManager : MonoBehaviour
     private UI_Text uIBubbleLife;
 
     [field: SerializeField]
-    private IAffordable<Locker> lockManager;
+    private LockManager lockManager;
     [field: SerializeField]
-    private IAffordable<Satistique> statManager;
+    private StatUpgrade statManager;
     [field: SerializeField]
-    private IAffordable<DuckData> duckManager;
+    private DuckManager duckManager;
 
 
     private Button Lock_1;
