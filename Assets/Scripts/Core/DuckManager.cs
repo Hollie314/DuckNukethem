@@ -72,6 +72,7 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
        if (dictionaryOfPoolOfDuck.TryGetValue(duckType, out var pool))
        {
            pool.ReturnToPool(duck);
+           playerDucks.Remove(duck);
            duck.OnTargetReached -= AttackBubble;
        }
    }

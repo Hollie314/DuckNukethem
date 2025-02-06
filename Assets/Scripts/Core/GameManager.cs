@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     
     //event for UI 
     public event Action<int> OnUpdatePlayerCoin;
+    public event Action OnMoneySpentCoin;
+    public event Action OnNotEnoughMoney;
 
     private void Awake()
     {
