@@ -1,5 +1,4 @@
 using System;
-using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +11,8 @@ public class GameManager : MonoBehaviour
     
     //event for UI 
     public event Action<int> OnUpdatePlayerCoin;
+    public event Action<int,int> OnStatUp;
+    public event Action<int> OnBubbleLifeChange; 
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
 
@@ -47,6 +48,17 @@ public class GameManager : MonoBehaviour
     {
         playerCoins += coingain;
         OnUpdatePlayerCoin?.Invoke(playerCoins);
+    }
+
+    public void UpdateStat(int stat_id, int stat_value)
+    {
+        Debug.Log(stat_value);
+        OnStatUp?.Invoke(stat_id, stat_value);
+    }
+    
+    public void UpdateBubbleLife(int life)
+    {
+        OnBubbleLifeChange?.Invoke(life);
     }
     
     // for singleton Ensures it's created automatically if accessed before existing

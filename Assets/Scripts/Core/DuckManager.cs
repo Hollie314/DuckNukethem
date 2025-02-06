@@ -22,16 +22,19 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
    {
       //retrieve all data of ducks
       ducks = GameController.GameDatabase.Ducks;
-      
+      int i = 0;
       //instantiate the pools
       dictionaryOfPoolOfDuck = new Dictionary<DuckData, PoolingSystem<Duck_>>();
       foreach (var duck_type in ducks)
       {
           dictionaryOfPoolOfDuck[duck_type] = new PoolingSystem<Duck_>(duck_type.duck_prefab, 10, Spawnlocation);
           duck_type.stats = new Satistique[3];
-          duck_type.stats[0] = (new Satistique("damage",10, duck_type.damage,1,1));
-          duck_type.stats[1] = (new Satistique("coingain",10, duck_type.coingain,1,1));
-          duck_type.stats[2] = (new Satistique("speed",10, (int)duck_type.speed,1,1));
+          duck_type.stats[0] = (new Satistique(i, "damage",10, duck_type.damage,1,1));
+          i++;
+          duck_type.stats[1] = (new Satistique(i, "coingain",10, duck_type.coingain,1,1));
+          i++;
+          duck_type.stats[2] = (new Satistique(i, "speed",10, (int)duck_type.speed,1,1));
+          i++;
       }
 
       playerDucks = new List<Duck_>();
@@ -84,7 +87,7 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
    //If duck can be buy, duck shall be spawn
    public bool Buy(ref int coin, DuckData product)
    {
-       if (coin > product.cost)
+       if (coin >= product.cost)
        {
            coin -= product.cost;
            SpawnDuck(product);

@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +11,14 @@ public class UIManager : MonoBehaviour
     private UI_Text uIcoin;
     [SerializeField]
     private UI_Text uIBubbleLife;
+    
+    [field:SerializeField]
+    private UI_Text[] stats_text;
+    [field:SerializeField]
+    private StatUpgrade[] statUp;
+    
 
+    
     [field: SerializeField]
     private LockManager lockManager;
     [field: SerializeField]
@@ -21,20 +30,23 @@ public class UIManager : MonoBehaviour
     private Button Lock_1;
 
     [SerializeField] private Bubble bubble;
+
     /*
      * subscribe to questionManagers events
      */
     private void OnEnable()
     {
         GameManager.Instance.OnUpdatePlayerCoin += UpdateCoinUI;
-        bubble.OnLifeLost += UpdateBubbleUI;
-        
+        GameManager.Instance.OnStatUp += UpdateStatUI;
+        GameManager.Instance.OnBubbleLifeChange += UpdateBubbleUI;
     }
 
     private void OnDisable()
     {
         GameManager.Instance.OnUpdatePlayerCoin -= UpdateCoinUI;
-        bubble.OnLifeLost -= UpdateBubbleUI;
+        GameManager.Instance.OnStatUp -= UpdateStatUI;
+        GameManager.Instance.OnBubbleLifeChange -= UpdateBubbleUI;
+        Debug.Log("sah");
     }
 
 
@@ -47,6 +59,13 @@ public class UIManager : MonoBehaviour
     {
         uIBubbleLife.Sync(life);
     }
+    
+    private void UpdateStatUI(int index, int value)
+    {
+        Debug.Log(" la stat n° "+ index +" prend la valeur : "+value);
+        //stats_text[index].GetComponent<TextMeshPro>().text = value.ToString();
+        stats_text[index].Sync(value);
+    }
 
     public void BuyDuck(DuckData duck)
     {
@@ -55,7 +74,7 @@ public class UIManager : MonoBehaviour
 
     public void BuyStat(StatUpgrade statUpgrade)
     {
-        Satistique stat = statUpgrade.duck_type.stats[statUpgrade.statIndex];
+        ref Satistique stat = ref statUpgrade.duck_type.stats[statUpgrade.statIndex];
         GameManager.Instance.Buy<Satistique>(statManager, stat);
     }
     

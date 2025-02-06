@@ -9,12 +9,12 @@ public class Bubble : MonoBehaviour
     private int totalBubble;
     public Animator animator;
     
-    public event Action<int> OnLifeLost;
     private void Start()
     {
         animator.Play("Spawn");
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
+        GameManager.Instance.UpdateBubbleLife(totalBubble);
     }
 
     private void ResetBubbleNumber()
@@ -41,6 +41,6 @@ public class Bubble : MonoBehaviour
             {
                 ResetBubbleNumber();
             }
-            OnLifeLost?.Invoke(totalBubble); 
+            GameManager.Instance.UpdateBubbleLife(totalBubble);
         }
 }    
