@@ -34,8 +34,11 @@ public class PoolingSystem<T> where T : MonoBehaviour
             obj.gameObject.SetActive(true);
             return obj;
         }
-        // If the list is empty we instantiate a new object
-        return null;
+        else
+        {
+            T newObj = GameObject.Instantiate(prefab, spawn);
+            return newObj;
+        }
     }
 
     public void ReturnToPool(T obj)
