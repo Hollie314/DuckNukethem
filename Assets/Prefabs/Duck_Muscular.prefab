@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7988491124991711022}
   - component: {fileID: 7052237306795800559}
-  - component: {fileID: 16101856458004227}
   - component: {fileID: 386281253841584280}
   - component: {fileID: 4596521118649911343}
   - component: {fileID: 4929011057673220172}
   - component: {fileID: 5058296268541922995}
+  - component: {fileID: -4704133354249706170}
   m_Layer: 0
-  m_Name: Soldier
+  m_Name: Duck_Muscular
   m_TagString: Soldier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: -230}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 110, y: 116}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &7052237306795800559
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9220245318705720930, guid: a0ddad5a55d9e1f41a11f61a1c00518b, type: 3}
+  m_Sprite: {fileID: 4264794723160757304, guid: 7a1c0a8dfc15e8642b578eb10b05d509, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -71,25 +71,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &16101856458004227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2389373406260762295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 224b14aadea147343afca94c0d5112a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
-  player: {fileID: 0}
-  bubble: {fileID: 0}
-  MoveSpeed: 300
-  nbAtk: 1
-  Cost: 1
-  CoinGain: 2
 --- !u!70 &386281253841584280
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -184,3 +165,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4704133354249706170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2389373406260762295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ec897ef93aba1479c71ce8006fd0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck_category: {fileID: 11400000, guid: baff20101969e14429dc0e1bb83f6b7c, type: 2}
