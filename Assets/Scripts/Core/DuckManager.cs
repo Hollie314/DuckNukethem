@@ -28,6 +28,10 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
       foreach (var duck_type in ducks)
       {
           dictionaryOfPoolOfDuck[duck_type] = new PoolingSystem<Duck_>(duck_type.duck_prefab, 10, Spawnlocation);
+          duck_type.stats = new Satistique[3];
+          duck_type.stats[0] = (new Satistique("damage",10, duck_type.damage,1,1));
+          duck_type.stats[1] = (new Satistique("coingain",10, duck_type.coingain,1,1));
+          duck_type.stats[2] = (new Satistique("speed",10, (int)duck_type.speed,1,1));
       }
 
       playerDucks = new List<Duck_>();

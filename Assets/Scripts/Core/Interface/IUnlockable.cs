@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IUnlockable
 {
-    void Unlock();
+    void Unlock(GameObject toUnclock, GameObject locker);
 }

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -7,6 +8,16 @@ public class UIManager : MonoBehaviour
     private UI_Text uIcoin;
     [SerializeField]
     private UI_Text uIBubbleLife;
+
+    [field: SerializeField]
+    private IAffordable<Locker> lockManager;
+    [field: SerializeField]
+    private IAffordable<Satistique> statManager;
+    [field: SerializeField]
+    private IAffordable<DuckData> duckManager;
+
+
+    private Button Lock_1;
 
     [SerializeField] private Bubble bubble;
     /*
@@ -16,6 +27,7 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.OnUpdatePlayerCoin += UpdateCoinUI;
         bubble.OnLifeLost += UpdateBubbleUI;
+        
     }
 
     private void OnDisable()
@@ -35,15 +47,20 @@ public class UIManager : MonoBehaviour
         uIBubbleLife.Sync(life);
     }
 
-    public void BuyDuck(IAffordable<DuckData> manager, DuckData duck)
+    public void BuyDuck(DuckData duck)
     {
-        GameManager.Instance.Buy<DuckData>(manager, duck);
+        GameManager.Instance.Buy<DuckData>(duckManager, duck);
     }
 
-    public void BuyStat(IAffordable<Satistique> manager, DuckData duck, int statIndex)
+    public void BuyStat(StatUpgrade statUpgrade)
     {
-        Satistique stat = duck.stats[statIndex];
-        GameManager.Instance.Buy<Satistique>(manager, stat);
+        Satistique stat = statUpgrade.duck_type.stats[statUpgrade.statIndex];
+        GameManager.Instance.Buy<Satistique>(statManager, stat);
+    }
+    
+    public void BuyLock(Locker locker)
+    {
+        GameManager.Instance.Buy<Locker>(lockManager, locker);
     }
     
 }
