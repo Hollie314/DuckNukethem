@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-public class Duck : MonoBehaviour
+public partial class Duck : MonoBehaviour
 {
     [HideInInspector]
     public DuckSpawner spawner;
@@ -27,7 +27,7 @@ public class Duck : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        bubble.SubtractBubble(NumberOfAtkUntilDie);
+        bubble.LooseLife(NumberOfAtkUntilDie);
         player.SetCoin(player.GetCoin() + Add);
     }
 }

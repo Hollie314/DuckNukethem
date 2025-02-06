@@ -7,28 +7,21 @@ public class Bubble : MonoBehaviour
 {
     private int MaxBubble = 1;
     private int totalBubble;
-    public TextMeshProUGUI bubbleText;
     public Animator animator;
-    public RuntimeAnimatorController bubbleAnimator;
-    public RuntimeAnimatorController bubbleAnimator2;
-    public RuntimeAnimatorController bubbleAnimator3;
+    
     private void Start()
     {
-        Debug.Log("les animations clips wtf : " + animator.runtimeAnimatorController.animationClips[0]+" si je dis pas de connerie c'est la même chose que : "+bubbleAnimator);
-        animator.Play("spawn");
-        //animator.runtimeAnimatorController = bubbleAnimator;
+        animator.Play("Spawn");
         totalBubble = MaxBubble;
         SetBubbleNumber(GetBubble());
+        GameManager.Instance.UpdateBubbleLife(totalBubble);
     }
 
     private void ResetBubbleNumber()
     {
         MaxBubble *= 10;
         totalBubble = MaxBubble;
-        SetBubbleNumber(totalBubble);
         animator.SetTrigger("Explode");
-        //animator.runtimeAnimatorController = bubbleAnimator2;
-        //StartCoroutine(RespawnBubble());
     }
     public int GetBubble()
     {
@@ -38,23 +31,16 @@ public class Bubble : MonoBehaviour
     public void SetBubbleNumber(int amount)
     {
         this.totalBubble = amount;
-        bubbleText.text = amount.ToString();
     }
-    public void SubtractBubble(int amount)
+    
+    public void LooseLife(int amount)
         {
             this.totalBubble -= amount;
-            SetBubbleNumber(GetBubble());
-            //animator.runtimeAnimatorController = bubbleAnimator3;
-            animator.SetTrigger("Get_Hit");
+            animator.SetTrigger("GetHit");
             if (totalBubble <= 0)
             {
                 ResetBubbleNumber();
             }
+            GameManager.Instance.UpdateBubbleLife(totalBubble);
         }
-
-    IEnumerator RespawnBubble()
-    {
-        yield return new WaitForSeconds(0.5f);
-        //animator.runtimeAnimatorController = bubbleAnimator;
-    }
 }    
