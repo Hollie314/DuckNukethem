@@ -12,9 +12,8 @@ public class DuckData : ScriptableObject
     public int coingain { get; private set; }
     [field: SerializeField]
     public float speed { get; private set; }
-    
-    [field: SerializeField]
-    public Satistique[] stats { get; private set; }
+
+    [field: SerializeField] public Satistique[] stats;
    
     
     [field: SerializeField]
@@ -24,7 +23,7 @@ public class DuckData : ScriptableObject
     {
         foreach (var stat in stats)
         {
-            if (stat.name == "dammage")
+            if (stat.name == "damage")
             {
                 return stat.value;
             }

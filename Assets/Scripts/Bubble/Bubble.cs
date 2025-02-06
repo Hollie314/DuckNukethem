@@ -7,8 +7,9 @@ public class Bubble : MonoBehaviour
 {
     private int MaxBubble = 1;
     private int totalBubble;
-    public TextMeshProUGUI bubbleText;
     public Animator animator;
+    
+    public event Action<int> OnLifeLost;
     private void Start()
     {
         animator.Play("Spawn");
@@ -20,7 +21,6 @@ public class Bubble : MonoBehaviour
     {
         MaxBubble *= 10;
         totalBubble = MaxBubble;
-        SetBubbleNumber(totalBubble);
         animator.SetTrigger("Explode");
     }
     public int GetBubble()
@@ -31,22 +31,16 @@ public class Bubble : MonoBehaviour
     public void SetBubbleNumber(int amount)
     {
         this.totalBubble = amount;
-        bubbleText.text = amount.ToString();
     }
+    
     public void LooseLife(int amount)
         {
             this.totalBubble -= amount;
-            SetBubbleNumber(GetBubble());
             animator.SetTrigger("GetHit");
             if (totalBubble <= 0)
             {
                 ResetBubbleNumber();
             }
+            OnLifeLost?.Invoke(totalBubble); 
         }
-
-    IEnumerator RespawnBubble()
-    {
-        yield return new WaitForSeconds(0.5f);
-        //animator.runtimeAnimatorController = bubbleAnimator;
-    }
 }    

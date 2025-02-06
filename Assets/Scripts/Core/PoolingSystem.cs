@@ -6,12 +6,17 @@ public class PoolingSystem<T> where T : MonoBehaviour
 {
     private Queue<T> pool = new Queue<T>();
     private T prefab;
-    private Transform resetlocation;
+    private Vector3 position;
+    private Quaternion rotation;
+    private Transform spwan;
 
     public PoolingSystem(T prefab, int initialSize, Transform spawnlocation)
     {
         this.prefab = prefab;
-        resetlocation = spawnlocation;
+        position = spawnlocation.position;
+        rotation = spawnlocation.rotation;
+        spwan = spawnlocation;
+        
         for (int i = 0; i < initialSize; i++)
         {
             T obj = GameObject.Instantiate(prefab, spawnlocation);
@@ -29,14 +34,14 @@ public class PoolingSystem<T> where T : MonoBehaviour
             return obj;
         }
         // If the list is empty we instantiate a new object
-        return GameObject.Instantiate(prefab, resetlocation); 
+        return null;
     }
 
     public void ReturnToPool(T obj)
     {
         obj.gameObject.SetActive(false);
         //reset position
-        obj.GetComponent<Transform>().SetLocalPositionAndRotation(resetlocation.position, resetlocation.rotation);
+        obj.GetComponent<Transform>().SetLocalPositionAndRotation(position, rotation);
         pool.Enqueue(obj);
     }
 }

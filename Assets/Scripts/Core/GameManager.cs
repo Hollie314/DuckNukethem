@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (manager.Buy(ref playerCoins, product))
         {
-            OnUpdatePlayerCoin(playerCoins);
+            OnUpdatePlayerCoin?.Invoke(playerCoins);
         }
         else
         {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     public void GainCoin(int coingain)
     {
         playerCoins += coingain;
-        OnUpdatePlayerCoin(playerCoins);
+        OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
     
     // for singleton Ensures it's created automatically if accessed before existing
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            GameObject managerObject = new GameObject("Market_Manager");
+            GameObject managerObject = new GameObject("GameManager");
             Instance = managerObject.AddComponent<GameManager>();
             DontDestroyOnLoad(managerObject);
         }

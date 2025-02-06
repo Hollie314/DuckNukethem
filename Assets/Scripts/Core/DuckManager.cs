@@ -47,6 +47,10 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
        if (dictionaryOfPoolOfDuck.TryGetValue(duck_category, out var pool))
        {
            Duck_ duck = pool.GetFromPool();
+           if (!duck)
+           {
+               return;
+           }
            playerDucks.Add(duck);
            // Subscribe to the despawn event
            duck.OnTargetReached += AttackBubble;
@@ -56,6 +60,7 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckData>
    //deal damage to the bubble and despawn duck
    private void AttackBubble(DuckData duckType, Duck_ duck)
    {
+       Debug.Log("dégat : "+duckType.GetDammage());
        boss_bubble.LooseLife(duckType.GetDammage());
        DespawnDuck(duckType,duck);
        GameManager.Instance.GainCoin(duckType.GetCoinGain());
