@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Soldier
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5429c58fc39cd1d47bf1a1c64eb62b2a, type: 2}
+  m_sharedMaterial: {fileID: 3321989045447312647, guid: 5429c58fc39cd1d47bf1a1c64eb62b2a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8429117525464790585, guid: 99534ddef45130e4f80e2b4bda6f4b0a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -282,3 +282,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c85aa510b5a884595ee530f32a030a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerUI: {fileID: 0}
+  ducks: []
