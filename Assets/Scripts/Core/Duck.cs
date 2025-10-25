@@ -1,28 +1,31 @@
 using System;
+using Core.Enum;
+using Core.Interface;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Duck_ : MonoBehaviour
+public class Duck : MonoBehaviour
 {
-    [field: SerializeField]
-    private DuckData duck_category;
+    [field : SerializeField]
+    public DuckType DuckType { get; private set; }
+    public event Action<Duck, IDamagable> OnTargetReached;
 
-    public event Action<DuckData, Duck_> OnTargetReached;
 
-
-    public void Move()
+    public void Move(float speed)
     {
         if (transform)
         {
-            transform.Translate(Vector3.right * (Time.deltaTime * (float)duck_category.GetSpeed()));
+            transform.Translate(Vector3.right * (Time.deltaTime * speed));
         }
     }
 
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bubble"))
         {
-            OnTargetReached?.Invoke(duck_category, this);
+            IDamagable damagable = other.GetComponent<IDamagable>();
+            OnTargetReached?.Invoke(this, damagable);
         }
     }
 }

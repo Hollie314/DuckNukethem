@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Core.Enum;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
@@ -15,16 +16,8 @@ public class UIManager : MonoBehaviour
     [field:SerializeField]
     private UI_Text[] stats_text;
     [field:SerializeField]
-    private StatUpgrade[] statUp;
+    private StatManager[] statUp;
     
-
-    
-    [field: SerializeField]
-    private LockManager lockManager;
-    [field: SerializeField]
-    private StatUpgrade statManager;
-    [field: SerializeField]
-    private DuckManager duckManager;
 
 
     private Button Lock_1;
@@ -67,20 +60,20 @@ public class UIManager : MonoBehaviour
         stats_text[index].Sync(value);
     }
 
-    public void BuyDuck(DuckData duck)
+    public void BuyDuck(int duckTypeID)
     {
-        GameManager.Instance.Buy<DuckData>(duckManager, duck);
+        DuckType duckType = (DuckType)duckTypeID;
+        GameManager.Instance.Buy<DuckType>(GameManager.Instance.DuckManager, duckType);
     }
 
-    public void BuyStat(StatUpgrade statUpgrade)
+    public void BuyStat(int statID)
     {
-        ref Satistique stat = ref statUpgrade.duck_type.stats[statUpgrade.statIndex];
-        GameManager.Instance.Buy<Satistique>(statManager, stat);
+        GameManager.Instance.Buy<int>(GameManager.Instance.StatManager, statID);
     }
     
     public void BuyLock(Locker locker)
     {
-        GameManager.Instance.Buy<Locker>(lockManager, locker);
+        GameManager.Instance.Buy<Locker>(GameManager.Instance.LockManager, locker);
     }
     
 }
