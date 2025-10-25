@@ -15,6 +15,14 @@ public class GameManager : MonoBehaviour
     public event Action<int> OnBubbleLifeChange; 
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
+    
+    //All Managers
+    [field: SerializeField]
+    public LockManager LockManager { get; private set; }
+    [field: SerializeField]
+    public StatManager StatManager { get; private set; }
+    [field: SerializeField]
+    public DuckManager DuckManager { get; private set; }
 
     private void Awake()
     {

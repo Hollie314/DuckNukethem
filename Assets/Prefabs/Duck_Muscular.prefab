@@ -177,4 +177,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ec897ef93aba1479c71ce8006fd0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duck_category: {fileID: 11400000, guid: baff20101969e14429dc0e1bb83f6b7c, type: 2}
+  <DuckType>k__BackingField: 2
