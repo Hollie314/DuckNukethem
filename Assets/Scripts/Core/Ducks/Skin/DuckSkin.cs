@@ -11,9 +11,6 @@ namespace Core.Ducks.Skin
         [field: SerializeField] public Sprite SkinSprite { get; private set; }
         [field: SerializeField] public bool IsLocked { get; private set; }
         [field: SerializeField] public Image SkinIcon { get; private set; }
-        
-        [field: SerializeField] public AnimatorController AnimatorOfTheSkin { get; private set; }
-        
         [field: SerializeField] public AnimationClip walkAnimation { get; private set; }
 
         public void Unlock()
