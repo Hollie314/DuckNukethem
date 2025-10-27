@@ -18,10 +18,5 @@ namespace Core.UI
             text.text = value.ToString();
             costText.text = cost.ToString();
         }
-
-        public bool DoesItMatch(DuckType duckType, StatType statType)
-        {
-            return DuckType == duckType && StatType == statType;
-        }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Core.Ducks.Skin;
 using Core.Enum;
 using UnityEngine;
 
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
     public DuckManager DuckManager { get; private set; }
     [field: SerializeField]
     public AutomateManager AutomateManager { get; private set; }
+    [field: SerializeField]
+    public SkinManager SkinManager { get; private set; }
     
     //The buble ref
     [field: SerializeField]

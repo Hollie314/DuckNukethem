@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Core.Ducks.Skin;
 using Core.Enum;
 using Core.UI;
 using NUnit.Framework;
@@ -23,8 +24,6 @@ public class UIManager : MonoBehaviour
     
     [field:SerializeField]
     private UI_Statistic[] stats_text;
-
-    private Button Lock_1;
     
     
     private void Awake()
@@ -93,17 +92,6 @@ public class UIManager : MonoBehaviour
     {
         uIBubbleLife.Sync(life);
     }
-    
-    private void UpdateStatUI(DuckType duckType,StatType statType, int value, int cost)
-    {
-        foreach (var statistic in stats_text)
-        {
-            if (statistic.DoesItMatch(duckType, statType))
-            {
-                statistic.Sync(value,cost);
-            }
-        }
-    }
 
     public void BuyDuck(int duckTypeIndex)
     {
@@ -129,6 +117,15 @@ public class UIManager : MonoBehaviour
         if (GameManager.Instance.AutomateManager.BuyAutomateUpgrade(out int price))
         {
             uiAutomatePrice.Sync(price);
+        }
+    }
+
+    public void SelectSkin(DuckSkin duckSkin)
+    {
+        if(GameManager.Instance.SkinManager.SetSelectedSkin(duckSkin, out DuckSkin lastSelected))
+        {
+            lastSelected.UnSelect();
+            duckSkin.Select();
         }
     }
     

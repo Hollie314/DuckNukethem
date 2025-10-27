@@ -1,14 +1,11 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using AutomateSpawn;
 using Core.Enum;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class AutomateManager : MonoBehaviour
 {
-    
     [field : SerializeField] public int Cooldown { get; private set; }
     [field : SerializeField] public int unLockPrice { get; private set; }
     [field : SerializeField] public Statistic SpawnRateUpgrade { get; private set; }
