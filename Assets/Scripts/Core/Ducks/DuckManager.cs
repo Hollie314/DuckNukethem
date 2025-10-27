@@ -76,8 +76,7 @@ public class DuckManager : MonoBehaviour
                return;
            }
            playerDucks.Add(duck);
-           duck.SwapSkin(GameManager.Instance.SkinManager.GetSkin(duck.DuckType).SkinSprite);
-           
+           GameManager.Instance.SkinManager.SwapSkin(duck);
            // Subscribe to the despawn event
            duck.OnTargetReached += AttackBubble;
        }

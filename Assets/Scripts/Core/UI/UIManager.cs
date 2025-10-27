@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
     
     
     /*
-     * subscribe to questionManagers events
+     * subscribe to Managers events
      */
     private void OnEnable()
     {

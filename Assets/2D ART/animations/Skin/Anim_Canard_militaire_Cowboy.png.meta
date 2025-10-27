@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 322
-        width: 126
-        height: 147
+        x: 0
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_1
       rect:
         serializedVersion: 2
-        x: 248
-        y: 321
-        width: 125
-        height: 148
+        x: 208
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_2
       rect:
         serializedVersion: 2
-        x: 464
-        y: 322
-        width: 119
-        height: 147
+        x: 416
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_3
       rect:
         serializedVersion: 2
-        x: 31
-        y: 163
-        width: 129
-        height: 147
+        x: 0
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_4
       rect:
         serializedVersion: 2
-        x: 246
-        y: 162
-        width: 126
-        height: 148
+        x: 208
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_5
       rect:
         serializedVersion: 2
-        x: 450
-        y: 164
-        width: 133
-        height: 146
+        x: 416
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_6
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 138
-        height: 147
+        x: 0
+        y: 0
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Cowboy_7
       rect:
         serializedVersion: 2
-        x: 236
-        y: 4
-        width: 134
-        height: 146
+        x: 208
+        y: 0
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: af0aa02c668a3d84baf9aea20d7e79b5
     internalID: 0
     vertices: []
     indices: 

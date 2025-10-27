@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 319
-        width: 138
-        height: 141
+        x: 0
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 319
-        width: 137
-        height: 141
+        x: 160
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_2
       rect:
         serializedVersion: 2
-        x: 336
-        y: 318
-        width: 180
-        height: 142
+        x: 320
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_3
       rect:
         serializedVersion: 2
-        x: 14
-        y: 157
-        width: 136
-        height: 142
+        x: 480
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_4
       rect:
         serializedVersion: 2
-        x: 172
-        y: 165
-        width: 138
-        height: 133
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_5
       rect:
         serializedVersion: 2
-        x: 326
-        y: 165
-        width: 191
-        height: 134
+        x: 160
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 151
-        height: 137
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Bikini_7
       rect:
         serializedVersion: 2
-        x: 164
-        y: 0
-        width: 194
-        height: 138
+        x: 480
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,11 +296,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_Muscle_Bikini_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a639128c114cb6419c1a5794be60044
+      internalID: 1607721387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_Muscle_Bikini_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4cc0a306e381a439502bc17327ec9f
+      internalID: 952003881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_Muscle_Bikini_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574051e0e2262874fb94ac56cbcbe2d1
+      internalID: 1094770752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bd7077ce3cfcc7e498eb990fc3a71086
     internalID: 0
     vertices: []
     indices: 
@@ -312,12 +378,15 @@ TextureImporter:
     nameFileIdTable:
       Anim_Canard_Muscle_Bikini_0: -3720591820048894311
       Anim_Canard_Muscle_Bikini_1: 6381323918918589833
+      Anim_Canard_Muscle_Bikini_10: 1094770752
       Anim_Canard_Muscle_Bikini_2: 8871437544916336499
       Anim_Canard_Muscle_Bikini_3: -6790478526076988650
       Anim_Canard_Muscle_Bikini_4: -4685935011171655128
       Anim_Canard_Muscle_Bikini_5: -2477511762803893410
       Anim_Canard_Muscle_Bikini_6: -1886648382831190459
       Anim_Canard_Muscle_Bikini_7: -740591211874602850
+      Anim_Canard_Muscle_Bikini_8: 1607721387
+      Anim_Canard_Muscle_Bikini_9: 952003881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

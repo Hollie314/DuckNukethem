@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 322
-        width: 131
-        height: 155
+        x: 0
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_1
       rect:
         serializedVersion: 2
-        x: 210
-        y: 318
-        width: 168
-        height: 162
+        x: 208
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_2
       rect:
         serializedVersion: 2
-        x: 423
-        y: 318
-        width: 215
-        height: 162
+        x: 416
+        y: 320
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_3
       rect:
         serializedVersion: 2
-        x: 31
-        y: 163
-        width: 133
-        height: 154
+        x: 0
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 5
-        width: 167
-        height: 156
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_5
       rect:
         serializedVersion: 2
-        x: 246
-        y: 162
-        width: 131
-        height: 155
+        x: 416
+        y: 160
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_6
       rect:
         serializedVersion: 2
-        x: 421
-        y: 158
-        width: 167
-        height: 159
+        x: 0
+        y: 0
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_militaire_Chef_7
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 142
-        height: 154
+        x: 208
+        y: 0
+        width: 208
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,11 +296,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_militaire_Chef_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 208
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efb6b8a97d11dd459c1a7ae6215976c
+      internalID: -1715651021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac349fe0b9662e54aa3f458d0eb73cd3
     internalID: 0
     vertices: []
     indices: 
@@ -318,6 +340,7 @@ TextureImporter:
       Anim_Canard_militaire_Chef_5: -7653445417676695138
       Anim_Canard_militaire_Chef_6: 7436507185045572958
       Anim_Canard_militaire_Chef_7: -1236707847546484055
+      Anim_Canard_militaire_Chef_8: -1715651021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,7 @@
 using System;
 using Core.Enum;
 using Core.Interface;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class Duck : MonoBehaviour
 {
     [field : SerializeField] public DuckType DuckType { get; private set; }
     [field : SerializeField] public Image SpriteRenderer { get; private set; }
+    [field : SerializeField] public Animator Animator { get; private set; }
     
     public event Action<Duck, IDamagable> OnTargetReached;
     
@@ -27,10 +29,5 @@ public class Duck : MonoBehaviour
             IDamagable damagable = other.GetComponent<IDamagable>();
             OnTargetReached?.Invoke(this, damagable);
         }
-    }
-
-    public void SwapSkin(Sprite sprite)
-    {
-        SpriteRenderer.sprite = sprite;
     }
 }

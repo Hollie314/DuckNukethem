@@ -9,6 +9,7 @@ public class Bubble : MonoBehaviour, IDamagable
     private int MaxHealthPoint = 1;
     public int CurrentHealthPoint { get; private set; }
     public Animator animator;
+    private int bubbleLevel = 0;
     
     private void Start()
     {
@@ -20,7 +21,9 @@ public class Bubble : MonoBehaviour, IDamagable
     {
         MaxHealthPoint *= 10;
         CurrentHealthPoint = MaxHealthPoint;
+        bubbleLevel++;
         animator.SetTrigger("Explode");
+        GameManager.Instance.UpdateBubbleExplode(bubbleLevel);
     }
     
     public void TakeDamages(int amount)

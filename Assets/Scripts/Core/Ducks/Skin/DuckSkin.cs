@@ -1,5 +1,7 @@
 ﻿using Core.Enum;
+using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Core.Ducks.Skin
 {
@@ -8,23 +10,26 @@ namespace Core.Ducks.Skin
         [field: SerializeField] public DuckType DuckType { get; private set; }
         [field: SerializeField] public Sprite SkinSprite { get; private set; }
         [field: SerializeField] public bool IsLocked { get; private set; }
-        [field: SerializeField] public Sprite UnlockSprite { get; private set; }
-        [field: SerializeField] public SpriteRenderer SkinIcon { get; private set; }
+        [field: SerializeField] public Image SkinIcon { get; private set; }
+        
+        [field: SerializeField] public AnimatorController AnimatorOfTheSkin { get; private set; }
+        
+        [field: SerializeField] public AnimationClip walkAnimation { get; private set; }
 
         public void Unlock()
         {
-            SkinIcon.sprite = UnlockSprite;
+            SkinIcon.sprite = SkinSprite;
             IsLocked = false;
         }
 
         public void Select()
         {
-            
+            SkinIcon.color = Color.white;
         }
         
         public void UnSelect()
         {
-            
+            SkinIcon.color = Color.grey;
         }
     }
 }

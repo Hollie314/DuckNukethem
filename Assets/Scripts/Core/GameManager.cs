@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public event Action<int> OnUpdatePlayerCoin;
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
+    public event Action<int> OnBubbleExploded;
     
     //All Managers
     [field: SerializeField]
@@ -66,6 +67,11 @@ public class GameManager : MonoBehaviour
     public void UpdateBubbleLife(int life)
     {
         OnBubbleLifeChange?.Invoke(life);
+    }
+    
+    public void UpdateBubbleExplode(int lvl)
+    {
+        OnBubbleExploded?.Invoke(lvl);
     }
     
     // for singleton Ensures it's created automatically if accessed before existing

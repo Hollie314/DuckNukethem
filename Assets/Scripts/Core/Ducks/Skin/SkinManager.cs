@@ -9,13 +9,27 @@ namespace Core.Ducks.Skin
 {
     public class SkinManager : MonoBehaviour
     {
-        [field: SerializeField] public DuckSkin[] UnlockedDucksSkins { get; private set;}
-        [field: SerializeField] public DuckSkin[] LockedDucksSkins { get; private set;}
+        [field: SerializeField] public List<DuckSkin> UnlockedDucksSkins { get; private set;}
+        [field: SerializeField] public List<DuckSkin> LockedDucksSkins { get; private set;}
         
         private bool isRandomSelected=false;
         private Dictionary<DuckType, DuckSkin> skinSelectedByDucks;
         private Dictionary<DuckType, List<DuckSkin>> unlockedSkinsByDucks;
 
+        
+        /*
+         * subscribe to Managers events
+         */
+        private void OnEnable()
+        {
+            GameManager.Instance.OnBubbleExploded += UnlockNewSkin;
+        }
+
+        private void OnDisable()
+        {
+            GameManager.Instance.OnBubbleExploded -= UnlockNewSkin;
+        }
+        
         private void Start()
         {
             unlockedSkinsByDucks = new Dictionary<DuckType, List<DuckSkin>>();
@@ -69,6 +83,37 @@ namespace Core.Ducks.Skin
         public void toogleRandom()
         {
             isRandomSelected = !isRandomSelected;
+        }
+
+
+        private void UnlockNewSkin(int lvlBubble)
+        {
+            if (lvlBubble % 2==0)
+            {
+                UnlockRandomSKin();
+            }
+        }
+        
+        public DuckSkin UnlockRandomSKin()
+        {
+            if (LockedDucksSkins.Count > 0)
+            {
+                int index = Random.Range(0, LockedDucksSkins.Count);
+                DuckSkin duckSkin = LockedDucksSkins[index];
+                duckSkin.Unlock();
+                LockedDucksSkins.Remove(duckSkin);
+                UnlockedDucksSkins.Add(duckSkin);
+                return duckSkin;
+            }
+            return null;
+        }
+
+        public void SwapSkin(Duck duck)
+        {
+            AnimatorOverrideController overrideController = new AnimatorOverrideController(duck.Animator.runtimeAnimatorController);
+            overrideController["Walk"] = GetSkin(duck.DuckType).walkAnimation;
+
+            duck.Animator.runtimeAnimatorController = overrideController;
         }
     }
 }
