@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Core.Interface;
+using Core.Statistics;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class Bubble : MonoBehaviour, IDamagable
     public Animator animator;
     private int bubbleLevel = 0;
     
+    [field: SerializeField] public UpgradeFormulaData UpgradeStatFormula { get; private set; }
+    
     private void Start()
     {
         animator.Play("Spawn");
@@ -19,7 +22,7 @@ public class Bubble : MonoBehaviour, IDamagable
 
     private void ResetBubbleNumber()
     {
-        MaxHealthPoint *= 10;
+        MaxHealthPoint = UpgradeStatFormula.CalculateValue(MaxHealthPoint, bubbleLevel);
         CurrentHealthPoint = MaxHealthPoint;
         bubbleLevel++;
         animator.SetTrigger("Explode");

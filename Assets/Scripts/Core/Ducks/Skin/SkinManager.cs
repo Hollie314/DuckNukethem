@@ -94,7 +94,7 @@ namespace Core.Ducks.Skin
             }
         }
         
-        public DuckSkin UnlockRandomSKin()
+        public void UnlockRandomSKin()
         {
             if (LockedDucksSkins.Count > 0)
             {
@@ -103,16 +103,19 @@ namespace Core.Ducks.Skin
                 duckSkin.Unlock();
                 LockedDucksSkins.Remove(duckSkin);
                 UnlockedDucksSkins.Add(duckSkin);
-                return duckSkin;
             }
-            return null;
         }
 
         public void SwapSkin(Duck duck)
         {
             AnimatorOverrideController overrideController = new AnimatorOverrideController(duck.Animator.runtimeAnimatorController);
             overrideController["Walk"] = GetSkin(duck.DuckType).walkAnimation;
-
+            
+            var anims = new List<KeyValuePair<AnimationClip, AnimationClip>>();
+            foreach (var a in overrideController.animationClips)
+                anims.Add(new KeyValuePair<AnimationClip, AnimationClip>(a, GetSkin(duck.DuckType).walkAnimation));
+            
+            overrideController.ApplyOverrides(anims);
             duck.Animator.runtimeAnimatorController = overrideController;
         }
     }
