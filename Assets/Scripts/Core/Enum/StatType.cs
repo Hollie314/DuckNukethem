@@ -2,8 +2,8 @@
 {
     public enum StatType
     {
-        Speed,
-        Damage,
-        Gain,
+        Speed=0,
+        Damage=1,
+        Gain=2,
     }
 }

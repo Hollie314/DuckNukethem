@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe47039bd1adf345aca5a3feb1e1975, type: 3}
   m_Name: Basic_Duck
   m_EditorClassIdentifier: 
+  <DuckType>k__BackingField: 0
   <cost>k__BackingField: 1
-  <damage>k__BackingField: 1
-  <coingain>k__BackingField: 2
-  <speed>k__BackingField: 300
+  stats:
+  - <StatType>k__BackingField: 0
+    <CurrentPrice>k__BackingField: 1
+    <CurrentStatValue>k__BackingField: 300
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
+  - <StatType>k__BackingField: 2
+    <CurrentPrice>k__BackingField: 1
+    <CurrentStatValue>k__BackingField: 2
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
+  - <StatType>k__BackingField: 1
+    <CurrentPrice>k__BackingField: 1
+    <CurrentStatValue>k__BackingField: 1
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
   <duck_prefab>k__BackingField: {fileID: -4704133354249706170, guid: 7be1ce1640c4e3c47be965d67bfe5302, type: 3}

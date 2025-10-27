@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LockManager : MonoBehaviour, IUnlockable, IAffordable<Locker>
+public class LockManager : MonoBehaviour, IUnlockable
 {
    
    public void Unlock(GameObject toUnclock, GameObject locker)
@@ -9,11 +9,10 @@ public class LockManager : MonoBehaviour, IUnlockable, IAffordable<Locker>
       toUnclock.SetActive(true);
    }
 
-   public bool Buy(ref int coin, Locker locker)
+   public bool BuyLocker(Locker locker)
    {
-      if (coin > locker.Price )
+      if (GameManager.Instance.TrySpendCoins(locker.Price))
       {
-         coin -= locker.Price;
          Unlock(locker.Product, locker.Lock);
          return true;
       }

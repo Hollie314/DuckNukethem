@@ -4,7 +4,7 @@ using Core.Enum;
 using Core.Interface;
 using UnityEngine;
 
-public class DuckManager : MonoBehaviour, IAffordable<DuckType>
+public class DuckManager : MonoBehaviour, IAffordable
 {
    
    //list of all category of ducks
@@ -12,19 +12,24 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckType>
    //where to spawn our ducks
    [field: SerializeField] private Transform Spawnlocation;
    //a pool for each category of ducks
-   private Dictionary<DuckData, PoolingSystem<Duck>> dictionaryOfPoolOfDuck;
-
+   private Dictionary<DuckType, PoolingSystem<Duck>> dictionaryOfPoolOfDuck;
+   //Link to easly access each duckdata by giving its type
+   private Dictionary<DuckType,DuckData> duckDataByType;
+   
    //List of all active duck owned by the player
    private List<Duck> playerDucks;
-   //The big scary bubble we fight
-   [field: SerializeField]
-   private Bubble boss_bubble;
 
    private void Awake()
    {
       //retrieve all data of ducks
       DuckData[] ducks = GameController.GameDatabase.Ducks;
+      
+      //init all tables, lists and dictionaries
+      dictionaryOfPoolOfDuck = new Dictionary<DuckType, PoolingSystem<Duck>>();
+      duckDataByType = new Dictionary<DuckType, DuckData>();
       duckData = new DuckData[ducks.Length];
+      playerDucks = new List<Duck>();
+      
       //clone SO for runtimes copies
       for (int i = 0; i < ducks.Length; i++)
       {
@@ -32,22 +37,17 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckType>
           Debug.Log(ducks[i].DuckType);
       }
       
-      //instantiate the pools
-      dictionaryOfPoolOfDuck = new Dictionary<DuckData, PoolingSystem<Duck>>();
+      //create pool of gameobject for each type of duck
       foreach (var duck_type in duckData)
       {
-          dictionaryOfPoolOfDuck[duck_type] = new PoolingSystem<Duck>(duck_type.duck_prefab, 10, Spawnlocation);//create pull of gameobject
-          duck_type.stats = new Statistique[3];
-          //in order : damages, gains, speed
-          duck_type.stats[0] = GameManager.Instance.StatManager.AddStat(duck_type.BaseUpgradePrice, duck_type.damage,
-              StatType.Damage, duck_type.UpgradeStatAndPriceMultiplier);
-          duck_type.stats[1] = GameManager.Instance.StatManager.AddStat(duck_type.BaseUpgradePrice, duck_type.coingain,
-              StatType.Gain, duck_type.UpgradeStatAndPriceMultiplier);
-          duck_type.stats[2] = GameManager.Instance.StatManager.AddStat(duck_type.BaseUpgradePrice, duck_type.speed,
-              StatType.Speed, duck_type.UpgradeStatAndPriceMultiplier);
+          dictionaryOfPoolOfDuck[duck_type.DuckType] = new PoolingSystem<Duck>(duck_type.duck_prefab, 10, Spawnlocation);
+          duckDataByType[duck_type.DuckType] = duck_type;
       }
+   }
 
-      playerDucks = new List<Duck>();
+   private void Start()
+   {
+       InitAllStats();
    }
 
    private void Update()
@@ -55,30 +55,25 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckType>
        //update all ducks movements that are on the board
        foreach (var duck in playerDucks)
        {
-           if (TryGetDuckData(duck.DuckType, out DuckData duckData))
+           if(TryGetDuckStat(duck.DuckType, StatType.Speed, out Statistic stat))
            {
-               duck.Move(duckData.GetSpeed());
+               duck.Move(stat.CurrentStatValue);
            }
        }
    }
 
-   public bool TryGetDuckData(DuckType duckType,out DuckData data)
+   public bool TryGetDuckData(DuckType duckType, out DuckData data) => duckDataByType.TryGetValue(duckType, out data);
+   
+
+   public bool TryGetDuckStat(DuckType duckType,StatType statType,out Statistic stat)
    {
-       foreach (var duck in duckData)
-       {
-           if (duck.DuckType == duckType)
-           {
-               data = duck;
-               return true;
-           }
-       }
-       data = null;
-       return false;
+       stat = null;
+       return TryGetDuckData(duckType, out DuckData duckData) && duckData.TryGetStat(statType, out stat);
    }
    
-   public void SpawnDuck(DuckData duck_category)
+   public void SpawnDuck(DuckType duckType)
    {
-       if (dictionaryOfPoolOfDuck.TryGetValue(duck_category, out var pool))
+       if (dictionaryOfPoolOfDuck.TryGetValue(duckType, out var pool))
        {
            Duck duck = pool.GetFromPool();
            if (!duck)
@@ -97,15 +92,20 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckType>
    {
        if (TryGetDuckData(duck.DuckType, out DuckData duckData))
        {
-           Debug.Log("dégat : "+duckData.GetDammage());
-           damagable.TakeDamages(duckData.GetDammage());
-           DespawnDuck(duckData,duck);
-           GameManager.Instance.GainCoin(duckData.GetCoinGain());
+           if (duckData.TryGetStat(StatType.Damage, out Statistic damage))
+           {
+               damagable.TakeDamages((int)damage.CurrentStatValue);
+           }
+           if (duckData.TryGetStat(StatType.Gain, out Statistic gain))
+           {
+               GameManager.Instance.GainCoin((int)gain.CurrentStatValue);
+           }
        }
+       DespawnDuck(duck.DuckType,duck);
    }
    
    //goodbye duck
-   private void DespawnDuck(DuckData duckType, Duck duck)
+   private void DespawnDuck(DuckType duckType, Duck duck)
    {
        if (dictionaryOfPoolOfDuck.TryGetValue(duckType, out var pool))
        {
@@ -116,17 +116,42 @@ public class DuckManager : MonoBehaviour, IAffordable<DuckType>
    }
 
    //If duck can be buy, duck shall be spawn
-   public bool Buy(ref int coin, DuckType product)
+   public bool BuyDuck(DuckType product)
    {
-       if (TryGetDuckData(product, out DuckData duckData))
+       if (TryGetDuckData(product, out DuckData duckData) && TrySpendCoins(duckData.cost))
        {
-           if (coin >= duckData.cost)
-           {
-               coin -= duckData.cost;
-               SpawnDuck(duckData);
-               return true;
-           }
+           SpawnDuck(product);
+           return true;
        }
        return false;
+   }
+
+   //If stat can be buy, stat shall be upgraded
+   public bool BuyStatUpgrade(StatType statType, DuckType duckType)
+   {
+       if (TryGetDuckStat(duckType, statType, out Statistic statistic) && TrySpendCoins(statistic.CurrentPrice))
+       {
+           statistic.Upgrade();
+           GameManager.Instance.UpdateStat(duckType,statType,(int)statistic.CurrentStatValue, (int)statistic.CurrentPrice);
+           return true;
+       }
+       return false;
+   }
+
+   private void InitAllStats()
+   {
+       foreach (var duckData in duckData)
+       {
+           foreach (var stat in duckData.stats)
+           {
+               GameManager.Instance.UpdateStat(duckData.DuckType, stat.StatType, (int)stat.CurrentStatValue,
+                   stat.CurrentPrice);
+           }
+       }
+   }
+
+   private bool TrySpendCoins(int cost)
+   {
+       return GameManager.Instance.TrySpendCoins(cost);
    }
 }

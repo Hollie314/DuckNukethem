@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AutomateSystem : MonoBehaviour, IAffordable<int>
+public class AutomateSystem : MonoBehaviour, IAffordable
 {
 
     // Update is called once per frame
@@ -9,7 +9,7 @@ public class AutomateSystem : MonoBehaviour, IAffordable<int>
         
     }
 
-    public bool Buy(ref int coin, int product)
+    public bool BuyDuck(ref int coin, int product)
     {
         return false;
     }

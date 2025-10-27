@@ -8,61 +8,23 @@ public class DuckData : ScriptableObject
     [field: SerializeField]
     public DuckType DuckType { get; private set; }
     
+    //Base values
     [field: SerializeField]
     public int cost { get; private set; }
-    [field: SerializeField]
-    public int damage { get; private set; }
-    [field: SerializeField]
-    public int coingain { get; private set; }
-    [field: SerializeField]
-    public float speed { get; private set; }
-    
-    [field: SerializeField]
-    public float UpgradeStatAndPriceMultiplier { get; private set; }
-    
-    [field: SerializeField]
-    public int BaseUpgradePrice { get; private set; }
-    
-    
-    [field: SerializeField] public Statistique[] stats;
-   
+    public Statistic[] stats;
+
+    public Dictionary<StatType, Statistic> StatByType { get; private set; }
     
     [field: SerializeField]
     public Duck duck_prefab { get; private set; }
-
-    public int GetDammage()
+    
+    private void OnEnable()
     {
-        foreach (var stat in stats)
-        {
-            if (stat.StatType == StatType.Damage)
-            {
-                return (int)stat.CurrentStatValue;
-            }
-        }
-        return -1;
+        StatByType = new Dictionary<StatType, Statistic>();
+        foreach (var s in stats)
+            StatByType[s.StatType] = s;
     }
     
-    public float GetSpeed()
-    {
-        foreach (var stat in stats)
-        {
-            if (stat.StatType == StatType.Speed)
-            {
-                return stat.CurrentStatValue;
-            }
-        }
-        return -1;
-    }
-    
-    public int GetCoinGain()
-    {
-        foreach (var stat in stats)
-        {
-            if (stat.StatType == StatType.Gain)
-            {
-                return (int)stat.CurrentStatValue;
-            }
-        }
-        return -1;
-    }
+    public bool TryGetStat(StatType type, out Statistic stat)
+        => StatByType.TryGetValue(type, out stat);
 }

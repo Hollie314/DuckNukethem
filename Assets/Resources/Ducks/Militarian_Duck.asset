@@ -14,9 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DuckType>k__BackingField: 1
   <cost>k__BackingField: 2
-  <damage>k__BackingField: 2
-  <coingain>k__BackingField: 5
-  <speed>k__BackingField: 300
-  <UpgradeStatAndPriceMultiplier>k__BackingField: 0
-  <BaseUpgradePrice>k__BackingField: 0
+  stats:
+  - <StatType>k__BackingField: 0
+    <CurrentPrice>k__BackingField: 2
+    <CurrentStatValue>k__BackingField: 300
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.2
+  - <StatType>k__BackingField: 2
+    <CurrentPrice>k__BackingField: 2
+    <CurrentStatValue>k__BackingField: 3
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.2
+  - <StatType>k__BackingField: 1
+    <CurrentPrice>k__BackingField: 2
+    <CurrentStatValue>k__BackingField: 2
+    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.2
   <duck_prefab>k__BackingField: {fileID: -4704133354249706170, guid: 8bc5ba45450f3204c86eb36fff1fac88, type: 3}

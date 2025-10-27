@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IAffordable<T>
+public interface IAffordable
 {
-    bool Buy(ref int coin, T product);
+    
 }

@@ -10,7 +10,6 @@ public class Duck : MonoBehaviour
     public DuckType DuckType { get; private set; }
     public event Action<Duck, IDamagable> OnTargetReached;
 
-
     public void Move(float speed)
     {
         if (transform)
@@ -18,7 +17,6 @@ public class Duck : MonoBehaviour
             transform.Translate(Vector3.right * (Time.deltaTime * speed));
         }
     }
-
     
     private void OnTriggerEnter2D(Collider2D other)
     {

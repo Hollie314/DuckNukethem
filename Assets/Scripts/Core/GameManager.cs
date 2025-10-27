@@ -1,4 +1,5 @@
 using System;
+using Core.Enum;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,11 +8,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     //Player money
-    private int playerCoins = 2;
+    public int playerCoins = 2;
     
     //event for UI 
     public event Action<int> OnUpdatePlayerCoin;
-    public event Action<int,int> OnStatUp;
+    public event Action<DuckType,StatType,int, int> OnStatUp;
     public event Action<int> OnBubbleLifeChange; 
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
@@ -39,29 +40,34 @@ public class GameManager : MonoBehaviour
         OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
 
-    // trying to buy something from a manager
-    public void Buy<T>(IAffordable<T> manager, T product)
+    public void Start()
     {
-        if (manager.Buy(ref playerCoins, product))
-        {
-            OnUpdatePlayerCoin?.Invoke(playerCoins);
-        }
-        else
-        {
-            //not enough money sadge
-        }
+        OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
+
 
     public void GainCoin(int coingain)
     {
         playerCoins += coingain;
         OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
-
-    public void UpdateStat(int stat_id, int stat_value)
+    
+    public bool TrySpendCoins(int cost)
     {
-        Debug.Log(stat_value);
-        OnStatUp?.Invoke(stat_id, stat_value);
+        if (playerCoins >= cost)
+        {
+            playerCoins -= cost;
+            OnUpdatePlayerCoin?.Invoke(playerCoins);
+            OnMoneySpentCoin?.Invoke();
+            return true;
+        }
+        OnNotEnoughMoney?.Invoke();
+        return false;
+    }
+
+    public void UpdateStat(DuckType duckType, StatType statType, int statValue, int statCost)
+    {
+        OnStatUp?.Invoke(duckType, statType, statValue, statCost);
     }
     
     public void UpdateBubbleLife(int life)
