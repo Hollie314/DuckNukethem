@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core.UI
 {
-    public class UI_Statistique : MonoBehaviour
+    public class UI_Statistic : MonoBehaviour
     {
         [field : SerializeField] 
         private TextMeshProUGUI text;

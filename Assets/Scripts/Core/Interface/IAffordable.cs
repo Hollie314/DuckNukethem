@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IAffordable
+public interface IAffordable<T>
 {
     
 }

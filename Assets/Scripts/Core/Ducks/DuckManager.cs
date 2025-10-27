@@ -4,7 +4,7 @@ using Core.Enum;
 using Core.Interface;
 using UnityEngine;
 
-public class DuckManager : MonoBehaviour, IAffordable
+public class DuckManager : MonoBehaviour
 {
    
    //list of all category of ducks
@@ -44,12 +44,7 @@ public class DuckManager : MonoBehaviour, IAffordable
           duckDataByType[duck_type.DuckType] = duck_type;
       }
    }
-
-   private void Start()
-   {
-       InitAllStats();
-   }
-
+   
    private void Update()
    {
        //update all ducks movements that are on the board
@@ -127,27 +122,18 @@ public class DuckManager : MonoBehaviour, IAffordable
    }
 
    //If stat can be buy, stat shall be upgraded
-   public bool BuyStatUpgrade(StatType statType, DuckType duckType)
+   public bool BuyStatUpgrade(StatType statType, DuckType duckType, out int currentStatValue, out int currentStatPrice)
    {
        if (TryGetDuckStat(duckType, statType, out Statistic statistic) && TrySpendCoins(statistic.CurrentPrice))
        {
            statistic.Upgrade();
-           GameManager.Instance.UpdateStat(duckType,statType,(int)statistic.CurrentStatValue, (int)statistic.CurrentPrice);
+           currentStatValue = (int)statistic.CurrentStatValue;
+           currentStatPrice = (int)statistic.CurrentPrice;
            return true;
        }
+       currentStatValue = 0;
+       currentStatPrice = 0;
        return false;
-   }
-
-   private void InitAllStats()
-   {
-       foreach (var duckData in duckData)
-       {
-           foreach (var stat in duckData.stats)
-           {
-               GameManager.Instance.UpdateStat(duckData.DuckType, stat.StatType, (int)stat.CurrentStatValue,
-                   stat.CurrentPrice);
-           }
-       }
    }
 
    private bool TrySpendCoins(int cost)

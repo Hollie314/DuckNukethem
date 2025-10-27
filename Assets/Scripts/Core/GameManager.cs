@@ -10,10 +10,9 @@ public class GameManager : MonoBehaviour
     //Player money
     public int playerCoins = 2;
     
-    //event for UI 
-    public event Action<int> OnUpdatePlayerCoin;
-    public event Action<DuckType,StatType,int, int> OnStatUp;
+    //event for UI/SFX
     public event Action<int> OnBubbleLifeChange; 
+    public event Action<int> OnUpdatePlayerCoin;
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
     
@@ -21,9 +20,13 @@ public class GameManager : MonoBehaviour
     [field: SerializeField]
     public LockManager LockManager { get; private set; }
     [field: SerializeField]
-    public StatManager StatManager { get; private set; }
-    [field: SerializeField]
     public DuckManager DuckManager { get; private set; }
+    [field: SerializeField]
+    public AutomateManager AutomateManager { get; private set; }
+    
+    //The buble ref
+    [field: SerializeField]
+    public Bubble Bubble { get; private set; }
 
     private void Awake()
     {
@@ -36,15 +39,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
-
-    public void Start()
-    {
-        OnUpdatePlayerCoin?.Invoke(playerCoins);
-    }
-
 
     public void GainCoin(int coingain)
     {
@@ -63,11 +58,6 @@ public class GameManager : MonoBehaviour
         }
         OnNotEnoughMoney?.Invoke();
         return false;
-    }
-
-    public void UpdateStat(DuckType duckType, StatType statType, int statValue, int statCost)
-    {
-        OnStatUp?.Invoke(duckType, statType, statValue, statCost);
     }
     
     public void UpdateBubbleLife(int life)

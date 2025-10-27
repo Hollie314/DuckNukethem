@@ -16,15 +16,21 @@ MonoBehaviour:
   <cost>k__BackingField: 1
   stats:
   - <StatType>k__BackingField: 0
-    <CurrentPrice>k__BackingField: 1
     <CurrentStatValue>k__BackingField: 300
-    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: b7a34e9f839d56542995c362d1f4d205, type: 2}
+    <CurrentPrice>k__BackingField: 1
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
   - <StatType>k__BackingField: 2
-    <CurrentPrice>k__BackingField: 1
     <CurrentStatValue>k__BackingField: 2
-    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
-  - <StatType>k__BackingField: 1
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: 2cfd1d36fcf3a8647866834affeecf04, type: 2}
     <CurrentPrice>k__BackingField: 1
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
+  - <StatType>k__BackingField: 1
     <CurrentStatValue>k__BackingField: 1
-    <UpgradeStatAndPriceMultiplier>k__BackingField: 0.1
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: 2cfd1d36fcf3a8647866834affeecf04, type: 2}
+    <CurrentPrice>k__BackingField: 1
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
   <duck_prefab>k__BackingField: {fileID: -4704133354249706170, guid: 7be1ce1640c4e3c47be965d67bfe5302, type: 3}

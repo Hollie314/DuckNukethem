@@ -18,12 +18,13 @@ public class UIManager : MonoBehaviour
     private UI_Text uIcoin;
     [SerializeField]
     private UI_Text uIBubbleLife;
+    [SerializeField]
+    private UI_Text uiAutomatePrice;
     
     [field:SerializeField]
-    private UI_Statistique[] stats_text;
+    private UI_Statistic[] stats_text;
 
     private Button Lock_1;
-    [SerializeField] private Bubble bubble;
     
     
     private void Awake()
@@ -37,7 +38,6 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
     
     // for singleton Ensures it's created automatically if accessed before existing
@@ -59,15 +59,28 @@ public class UIManager : MonoBehaviour
     private void OnEnable()
     {
         GameManager.Instance.OnUpdatePlayerCoin += UpdateCoinUI;
-        GameManager.Instance.OnStatUp += UpdateStatUI;
         GameManager.Instance.OnBubbleLifeChange += UpdateBubbleUI;
     }
 
     private void OnDisable()
     {
         GameManager.Instance.OnUpdatePlayerCoin -= UpdateCoinUI;
-        GameManager.Instance.OnStatUp -= UpdateStatUI;
         GameManager.Instance.OnBubbleLifeChange -= UpdateBubbleUI;
+    }
+    
+    //initialize the UI info 
+    private void Start()
+    {
+        uiAutomatePrice.Sync(GameManager.Instance.AutomateManager.unLockPrice);
+        uIcoin.Sync(GameManager.Instance.playerCoins);
+        uIBubbleLife.Sync(GameManager.Instance.Bubble.CurrentHealthPoint);
+        foreach (var uiStatistic in stats_text)
+        {
+            if (GameManager.Instance.DuckManager.TryGetDuckStat(uiStatistic.DuckType, uiStatistic.StatType, out Statistic stat))
+            {
+                uiStatistic.Sync((int)stat.CurrentStatValue, stat.CurrentPrice);
+            }
+        }
     }
 
 
@@ -98,14 +111,25 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.DuckManager.BuyDuck(duckType);
     }
 
-    public void BuyStat(UI_Statistique uiStatistique)
+    public void BuyStat(UI_Statistic uiStatistic)
     {
-       GameManager.Instance.DuckManager.BuyStatUpgrade(uiStatistique.StatType, uiStatistique.DuckType);
+        if (GameManager.Instance.DuckManager.BuyStatUpgrade(uiStatistic.StatType, uiStatistic.DuckType, out int currentStatValue, out int currentStatPrice))
+        {
+            uiStatistic.Sync(currentStatValue,currentStatPrice);
+        }
     }
     
-    public void BuyLock(Locker locker)
+    public void BuyLock(UI_Locker uiLocker)
     {
-        GameManager.Instance.LockManager.BuyLocker(locker);
+        GameManager.Instance.LockManager.BuyLocker(uiLocker);
+    }
+
+    public void BuyAutomation()
+    {
+        if (GameManager.Instance.AutomateManager.BuyAutomateUpgrade(out int price))
+        {
+            uiAutomatePrice.Sync(price);
+        }
     }
     
 }

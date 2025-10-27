@@ -5,5 +5,6 @@
         Speed=0,
         Damage=1,
         Gain=2,
+        Cooldown=3,
     }
 }

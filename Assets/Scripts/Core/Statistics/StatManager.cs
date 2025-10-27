@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Core.Enum;
 using UnityEngine;
 
-public class StatManager: MonoBehaviour, IAffordable
+public class StatManager: MonoBehaviour
 {
     private int id=0;
     public List<Statistic> Statistiques { get; private set; }

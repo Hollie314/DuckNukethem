@@ -12,6 +12,8 @@ public class AutomatisateButton : MonoBehaviour
     float timerSpawn = 3f;
     public Transform playerUI;
     public TextMeshProUGUI autoSpawnText;
+    
+    [field : SerializeField] public Statistic Statistic { get; private set; }
 
     private void Start()
     {
