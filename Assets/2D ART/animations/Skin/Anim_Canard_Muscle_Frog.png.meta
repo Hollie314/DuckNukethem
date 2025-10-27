@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 319
-        width: 135
-        height: 157
+        x: 0
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 319
-        width: 134
-        height: 157
+        x: 160
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_2
       rect:
         serializedVersion: 2
-        x: 336
-        y: 318
-        width: 132
-        height: 159
+        x: 320
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_3
       rect:
         serializedVersion: 2
-        x: 14
-        y: 157
-        width: 133
-        height: 158
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_4
       rect:
         serializedVersion: 2
-        x: 172
-        y: 165
-        width: 135
-        height: 150
+        x: 160
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_5
       rect:
         serializedVersion: 2
-        x: 326
-        y: 165
-        width: 142
-        height: 151
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_6
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 146
-        height: 155
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_Muscle_Frog_7
       rect:
         serializedVersion: 2
-        x: 164
+        x: 160
         y: 0
-        width: 144
-        height: 155
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c7a84d27bbf8ed5459349c45ecb6e3e3
     internalID: 0
     vertices: []
     indices: 

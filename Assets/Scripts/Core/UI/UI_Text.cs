@@ -6,9 +6,8 @@ public class UI_Text : MonoBehaviour
     [SerializeField] 
     private TextMeshProUGUI text;
 
-    public void Sync(int coin)
+    public void Sync(int value)
     {
-        Debug.Log("iiiiiiiiiiii");
-        text.text = coin.ToString();
+        text.text = value.ToString();
     }
 }

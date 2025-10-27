@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 319
-        width: 124
-        height: 153
+        x: 0
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_1
       rect:
         serializedVersion: 2
-        x: 178
+        x: 160
         y: 320
-        width: 123
-        height: 153
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_2
       rect:
         serializedVersion: 2
-        x: 344
+        x: 320
         y: 320
-        width: 117
-        height: 153
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_3
       rect:
         serializedVersion: 2
-        x: 14
-        y: 0
-        width: 136
-        height: 150
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_4
       rect:
         serializedVersion: 2
-        x: 26
+        x: 160
         y: 160
-        width: 124
-        height: 151
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1
-        width: 134
-        height: 149
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_6
       rect:
         serializedVersion: 2
-        x: 174
-        y: 160
-        width: 127
-        height: 151
+        x: 0
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_basique_Crete_7
       rect:
         serializedVersion: 2
-        x: 335
-        y: 149
-        width: 132
-        height: 164
+        x: 160
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,11 +296,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_basique_Crete_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dd9d6d03056144580a0ae80650bf18
+      internalID: -844275547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 69401f5d803926e4e977064bba182b0a
     internalID: 0
     vertices: []
     indices: 
@@ -318,6 +340,7 @@ TextureImporter:
       Anim_Canard_basique_Crete_5: 7734494940081174499
       Anim_Canard_basique_Crete_6: -2657096547000464997
       Anim_Canard_basique_Crete_7: -9098167735579363536
+      Anim_Canard_basique_Crete_8: -844275547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -178,3 +178,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <DuckType>k__BackingField: 2
+  <SpriteRenderer>k__BackingField: {fileID: 7052237306795800559}
+  <Animator>k__BackingField: {fileID: 5058296268541922995}

@@ -1,20 +1,12 @@
 using UnityEngine;
 
-public class LockManager : MonoBehaviour, IUnlockable, IAffordable<Locker>
+public class LockManager : MonoBehaviour
 {
-   
-   public void Unlock(GameObject toUnclock, GameObject locker)
+   public bool BuyLocker(UI_Locker uiLocker)
    {
-      locker.SetActive(false);
-      toUnclock.SetActive(true);
-   }
-
-   public bool Buy(ref int coin, Locker locker)
-   {
-      if (coin > locker.Price )
+      if (GameManager.Instance.TrySpendCoins(uiLocker.Price))
       {
-         coin -= locker.Price;
-         Unlock(locker.Product, locker.Lock);
+         uiLocker.Unlock();
          return true;
       }
       return false;

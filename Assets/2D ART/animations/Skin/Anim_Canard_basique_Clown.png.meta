@@ -124,10 +124,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 319
-        width: 126
-        height: 159
+        x: 0
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_1
       rect:
         serializedVersion: 2
-        x: 178
+        x: 160
         y: 320
-        width: 124
-        height: 158
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_2
       rect:
         serializedVersion: 2
-        x: 344
+        x: 320
         y: 320
-        width: 117
-        height: 159
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_3
       rect:
         serializedVersion: 2
-        x: 14
-        y: 0
-        width: 136
-        height: 158
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_4
       rect:
         serializedVersion: 2
-        x: 26
+        x: 160
         y: 160
-        width: 123
-        height: 159
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1
-        width: 136
-        height: 157
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_6
       rect:
         serializedVersion: 2
-        x: 174
-        y: 160
-        width: 126
-        height: 159
+        x: 0
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Anim_Canard_basique_Clown_7
       rect:
         serializedVersion: 2
-        x: 335
-        y: 149
-        width: 133
-        height: 170
+        x: 160
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,11 +296,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_basique_Clown_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32867b1f730a3384f8ff3c6297c2a72d
+      internalID: 1579209162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f7df4e390cb8b1f4688ef790e47cf850
     internalID: 0
     vertices: []
     indices: 
@@ -318,6 +340,7 @@ TextureImporter:
       Anim_Canard_basique_Clown_5: 2607133597129254399
       Anim_Canard_basique_Clown_6: 7086103837257077996
       Anim_Canard_basique_Clown_7: -8747780232572945990
+      Anim_Canard_basique_Clown_8: 1579209162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

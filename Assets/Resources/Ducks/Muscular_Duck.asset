@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe47039bd1adf345aca5a3feb1e1975, type: 3}
   m_Name: Muscular_Duck
   m_EditorClassIdentifier: 
+  <DuckType>k__BackingField: 2
   <cost>k__BackingField: 3
-  <damage>k__BackingField: 3
-  <coingain>k__BackingField: 10
-  <speed>k__BackingField: 300
+  stats:
+  - <StatType>k__BackingField: 0
+    <CurrentStatValue>k__BackingField: 300
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: b7a34e9f839d56542995c362d1f4d205, type: 2}
+    <CurrentPrice>k__BackingField: 3
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
+  - <StatType>k__BackingField: 2
+    <CurrentStatValue>k__BackingField: 10
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: 2cfd1d36fcf3a8647866834affeecf04, type: 2}
+    <CurrentPrice>k__BackingField: 3
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
+  - <StatType>k__BackingField: 1
+    <CurrentStatValue>k__BackingField: 3
+    <UpgradeStatFormula>k__BackingField: {fileID: 11400000, guid: 2cfd1d36fcf3a8647866834affeecf04, type: 2}
+    <CurrentPrice>k__BackingField: 3
+    <UpgradePriceFormula>k__BackingField: {fileID: 11400000, guid: 778d84b0ba9678d4696ac353dddb4292, type: 2}
+    <UpgradeCount>k__BackingField: 0
   <duck_prefab>k__BackingField: {fileID: -4704133354249706170, guid: 79d135cf76a2e5a41a45c61684e5f7bc, type: 3}

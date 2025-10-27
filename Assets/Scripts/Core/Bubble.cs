@@ -1,47 +1,42 @@
 using System;
 using System.Collections;
 using Core.Interface;
+using Core.Statistics;
 using TMPro;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour, IDamagable
 {
     private int MaxHealthPoint = 1;
-    private int currentHealthPoint;
+    public int CurrentHealthPoint { get; private set; }
     public Animator animator;
+    private int bubbleLevel = 0;
+    
+    [field: SerializeField] public UpgradeFormulaData UpgradeStatFormula { get; private set; }
     
     private void Start()
     {
         animator.Play("Spawn");
-        currentHealthPoint = MaxHealthPoint;
-        SetBubbleNumber(GetBubble());
-        GameManager.Instance.UpdateBubbleLife(currentHealthPoint);
+        CurrentHealthPoint = MaxHealthPoint;
     }
 
     private void ResetBubbleNumber()
     {
-        MaxHealthPoint *= 10;
-        currentHealthPoint = MaxHealthPoint;
+        MaxHealthPoint = UpgradeStatFormula.CalculateValue(MaxHealthPoint, bubbleLevel);
+        CurrentHealthPoint = MaxHealthPoint;
+        bubbleLevel++;
         animator.SetTrigger("Explode");
-    }
-    public int GetBubble()
-    {
-        return currentHealthPoint;
-    }
-
-    public void SetBubbleNumber(int amount)
-    {
-        this.currentHealthPoint = amount;
+        GameManager.Instance.UpdateBubbleExplode(bubbleLevel);
     }
     
     public void TakeDamages(int amount)
     {
-        this.currentHealthPoint -= amount;
+        this.CurrentHealthPoint -= amount;
         animator.SetTrigger("GetHit");
-        if (currentHealthPoint <= 0)
+        if (CurrentHealthPoint <= 0)
         {
             ResetBubbleNumber();
         }
-        GameManager.Instance.UpdateBubbleLife(currentHealthPoint);
+        GameManager.Instance.UpdateBubbleLife(CurrentHealthPoint);
     }
 }    

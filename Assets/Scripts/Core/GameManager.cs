@@ -1,4 +1,6 @@
 using System;
+using Core.Ducks.Skin;
+using Core.Enum;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,22 +9,28 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     //Player money
-    private int playerCoins = 2;
+    public int playerCoins = 2;
     
-    //event for UI 
-    public event Action<int> OnUpdatePlayerCoin;
-    public event Action<int,int> OnStatUp;
+    //event for UI/SFX
     public event Action<int> OnBubbleLifeChange; 
+    public event Action<int> OnUpdatePlayerCoin;
     public event Action OnMoneySpentCoin;
     public event Action OnNotEnoughMoney;
+    public event Action<int> OnBubbleExploded;
     
     //All Managers
     [field: SerializeField]
     public LockManager LockManager { get; private set; }
     [field: SerializeField]
-    public StatManager StatManager { get; private set; }
-    [field: SerializeField]
     public DuckManager DuckManager { get; private set; }
+    [field: SerializeField]
+    public AutomateManager AutomateManager { get; private set; }
+    [field: SerializeField]
+    public SkinManager SkinManager { get; private set; }
+    
+    //The buble ref
+    [field: SerializeField]
+    public Bubble Bubble { get; private set; }
 
     private void Awake()
     {
@@ -35,21 +43,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        OnUpdatePlayerCoin?.Invoke(playerCoins);
-    }
-
-    // trying to buy something from a manager
-    public void Buy<T>(IAffordable<T> manager, T product)
-    {
-        if (manager.Buy(ref playerCoins, product))
-        {
-            OnUpdatePlayerCoin?.Invoke(playerCoins);
-        }
-        else
-        {
-            //not enough money sadge
-        }
     }
 
     public void GainCoin(int coingain)
@@ -57,16 +50,28 @@ public class GameManager : MonoBehaviour
         playerCoins += coingain;
         OnUpdatePlayerCoin?.Invoke(playerCoins);
     }
-
-    public void UpdateStat(int stat_id, int stat_value)
+    
+    public bool TrySpendCoins(int cost)
     {
-        Debug.Log(stat_value);
-        OnStatUp?.Invoke(stat_id, stat_value);
+        if (playerCoins >= cost)
+        {
+            playerCoins -= cost;
+            OnUpdatePlayerCoin?.Invoke(playerCoins);
+            OnMoneySpentCoin?.Invoke();
+            return true;
+        }
+        OnNotEnoughMoney?.Invoke();
+        return false;
     }
     
     public void UpdateBubbleLife(int life)
     {
         OnBubbleLifeChange?.Invoke(life);
+    }
+    
+    public void UpdateBubbleExplode(int lvl)
+    {
+        OnBubbleExploded?.Invoke(lvl);
     }
     
     // for singleton Ensures it's created automatically if accessed before existing

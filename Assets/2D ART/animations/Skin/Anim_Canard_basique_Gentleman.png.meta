@@ -121,10 +121,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 319
-        width: 123
-        height: 161
+        x: 0
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 158
-        width: 122
-        height: 162
+        x: 160
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_2
       rect:
         serializedVersion: 2
-        x: 162
-        y: 0
-        width: 136
-        height: 320
+        x: 320
+        y: 320
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_3
       rect:
         serializedVersion: 2
-        x: 178
-        y: 319
-        width: 123
-        height: 161
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_4
       rect:
         serializedVersion: 2
-        x: 335
-        y: 147
-        width: 132
-        height: 172
+        x: 160
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_5
       rect:
         serializedVersion: 2
-        x: 343
-        y: 318
-        width: 116
-        height: 162
+        x: 320
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,9 +253,9 @@ TextureImporter:
       name: Anim_Canard_basique_Gentleman_6
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 134
+        width: 160
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,11 +271,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_basique_Gentleman_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17516ea3b0a531648828d77e722db31f
+      internalID: -387310439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Canard_basique_Gentleman_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5f1cc873a8d1449b5c5ae882de4a79
+      internalID: 310541090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4cd30694bab0e94ea53c2f5fed56f9a
     internalID: 0
     vertices: []
     indices: 
@@ -292,6 +336,8 @@ TextureImporter:
       Anim_Canard_basique_Gentleman_4: -1631814507652002271
       Anim_Canard_basique_Gentleman_5: -8015531331832024372
       Anim_Canard_basique_Gentleman_6: 2894578484781608098
+      Anim_Canard_basique_Gentleman_7: -387310439
+      Anim_Canard_basique_Gentleman_8: 310541090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
