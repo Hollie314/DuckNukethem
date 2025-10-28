@@ -176,10 +176,10 @@ TextureImporter:
       name: Animation_bulle_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 335
-        width: 115
-        height: 111
+        x: 12
+        y: 309
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: Animation_bulle_1
       rect:
         serializedVersion: 2
-        x: 185
-        y: 331
-        width: 114
-        height: 117
+        x: 159
+        y: 309
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: Animation_bulle_2
       rect:
         serializedVersion: 2
-        x: 333
-        y: 335
-        width: 114
-        height: 109
+        x: 310
+        y: 310
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: Animation_bulle_3
       rect:
         serializedVersion: 2
-        x: 30
-        y: 187
-        width: 117
-        height: 110
+        x: 7
+        y: 166
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: Animation_bulle_4
       rect:
         serializedVersion: 2
-        x: 169
-        y: 176
-        width: 136
-        height: 133
+        x: 156
+        y: 161
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: Animation_bulle_5
       rect:
         serializedVersion: 2
-        x: 319
-        y: 176
-        width: 134
-        height: 128
+        x: 310
+        y: 161
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: Animation_bulle_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 30
-        width: 138
-        height: 125
+        x: 12
+        y: 10
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: Animation_bulle_7
       rect:
         serializedVersion: 2
-        x: 174
-        y: 27
-        width: 134
-        height: 121
+        x: 161
+        y: 6
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,23 +349,23 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animation_bulle_18
+      name: Animation_bulle_8
       rect:
         serializedVersion: 2
-        x: 324
-        y: 27
-        width: 132
-        height: 117
+        x: 315
+        y: 6
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 178703fc92b82e0a0800000000000000
-      internalID: -6853762671218493327
+      spriteID: f6dc85e78206a2749a36150a8f9ad69d
+      internalID: 781305750
       vertices: []
       indices: 
       edges: []
@@ -386,13 +386,13 @@ TextureImporter:
     nameFileIdTable:
       Animation_bulle_0: -4558090165194428855
       Animation_bulle_1: 7231255164477003332
-      Animation_bulle_18: -6853762671218493327
       Animation_bulle_2: -9034746594815924511
       Animation_bulle_3: -6316308935433393681
       Animation_bulle_4: 5481616104122571095
       Animation_bulle_5: -6073504184451342583
       Animation_bulle_6: 487749426425073531
       Animation_bulle_7: 6362303555690754279
+      Animation_bulle_8: 781305750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
