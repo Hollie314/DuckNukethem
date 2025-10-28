@@ -11,7 +11,9 @@ public class Bubble : MonoBehaviour, IDamagable
     public int CurrentHealthPoint { get; private set; }
     public Animator animator;
     private int bubbleLevel = 0;
-    
+    private static readonly int Explode = Animator.StringToHash("IsDead");
+    private static readonly int GetHit = Animator.StringToHash("IsHit");
+
     [field: SerializeField] public UpgradeFormulaData UpgradeStatFormula { get; private set; }
     
     private void Start()
@@ -25,14 +27,14 @@ public class Bubble : MonoBehaviour, IDamagable
         MaxHealthPoint = UpgradeStatFormula.CalculateValue(MaxHealthPoint, bubbleLevel);
         CurrentHealthPoint = MaxHealthPoint;
         bubbleLevel++;
-        animator.SetTrigger("Explode");
+        animator.SetTrigger(Explode);
         GameManager.Instance.UpdateBubbleExplode(bubbleLevel);
     }
     
     public void TakeDamages(int amount)
     {
         this.CurrentHealthPoint -= amount;
-        animator.SetTrigger("GetHit");
+        animator.SetTrigger(GetHit);
         if (CurrentHealthPoint <= 0)
         {
             ResetBubbleNumber();
